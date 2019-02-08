@@ -1,0 +1,115 @@
+@import "index.scss";
+
+/*.flex-header {
+  nav ol li:nth-child(3) {
+    a {
+      color: $blue;
+      .fas {
+        color: $blue;
+      }
+    }
+  }
+}
+*/
+form {
+
+  fieldset {
+    padding: 40px;
+    border-color: $pink;
+    border-radius: 20px;
+
+    legend {
+      padding-left: 10px;
+      padding-right: 10px;
+      text-align: center;
+      font-size: $h3Size;
+      color: $blue;
+    }
+  }
+
+  .form-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    input {
+      margin: 20px;
+      padding: 20px;
+      color: white;
+      background-color: $pink;
+      border: none;
+    }
+    .name {
+      width: 45%;
+    }
+    .mail {
+      width: 45%;
+    }
+    .message {
+      width: 100%;
+    }
+
+  }
+
+  .button {
+    text-align: center;
+    padding-top: 24px;
+
+    button {
+      width: 10%;
+      border: 0;
+      padding: 14px 20px;
+    }
+    button:nth-child(1) {
+      background-color: $pink;
+      font-size:$texteSize;
+      color: $white;
+    }
+    button:nth-child(2) {
+      background-color: $blue;
+      font-size:$texteSize;
+      color: $white;
+    }
+  }
+}
+/* ********************* PAD ********************** */
+@media screen and (max-width: 1366px) and (min-width: 480px) {
+  form {
+    .form-flex {
+      .name {
+        width: 100%;
+      }
+      .mail {
+        width: 100%;
+      }
+    }
+    .button {
+      button {
+        width: 20%;
+      }
+    }
+  }
+}
+
+/* ******************** PHONE ******************** */
+@media screen and (max-width: 480px) {
+  .container {
+    width: 95%;
+  }
+
+  form {
+    .form-flex {
+      .name {
+        width: 100%;
+      }
+      .mail {
+        width: 100%;
+      }
+    }
+    .button {
+      button {
+        width: 48%;
+      }
+    }
+  }
+}
