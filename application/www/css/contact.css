@@ -201,9 +201,9 @@ footer {
       padding-bottom: 0; }
       footer .flex-footer div {
         margin-bottom: 1.5em; } }
-.flex-header nav ol li:nth-child(3) a {
+.flex-header .host a {
   color: #A2B7BF; }
-  .flex-header nav ol li:nth-child(3) a .fas {
+  .flex-header .host a .fas {
     color: #A2B7BF; }
 
 form fieldset {
@@ -228,12 +228,14 @@ form .form-flex {
     background-color: #EDC1CC;
     border: none; }
   form .form-flex #FirstName {
-    width: 45%; }
+    width: 45%;
+    text-transform: capitalize; }
   form .form-flex #LastName {
-    width: 45%; }
-  form .form-flex #mail {
+    width: 45%;
+    text-transform: capitalize; }
+  form .form-flex #Mail {
     width: 100%; }
-  form .form-flex #message {
+  form .form-flex #Message {
     width: 100%; }
 form .button {
   text-align: center;

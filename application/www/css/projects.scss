@@ -1,7 +1,7 @@
 @import "index.scss";
 
-/*.flex-header {
-  nav ol li:nth-child(2) {
+.flex-header {
+  .host {
     a {
       color: $blue;
       .fas {
@@ -10,4 +10,3 @@
     }
   }
 }
-*/

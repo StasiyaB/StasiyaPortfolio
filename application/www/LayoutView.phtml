@@ -33,9 +33,9 @@
         </a>
         <nav>
           <ol class="list-transform">
-            <li><a class="child1" href="#"><i class="fas fa-id-card child1"></i>Who I Am</a></li>
-            <li><a class="child2" href="#"><i class="fas fa-folder-open child2"></i>My Projects</a></li>
-            <li><a class="child3" href="#"><i class="fas fa-envelope child3"></i>Contact Me</a></li>
+            <li id="id" class=""><a href="<?= $requestUrl ?>/id/"><i class="fas fa-id-card"></i>Who I Am</a></li>
+            <li id="project" class=""><a href="<?= $requestUrl ?>/projects/"><i class="fas fa-folder-open"></i>My Projects</a></li>
+            <li id="contact" class=""><a href="<?= $requestUrl ?>/contact/"><i class="fas fa-envelope"></i>Contact Me</a></li>
           </ol>
         </nav>
       </header>
@@ -66,7 +66,7 @@
       </footer>
 
 <!-- Code principal JavaScript de l'application -->
-  <script src="<?= $wwwUrl ?>/js/main.js"></script>
+  <script type="text/javascript" src="<?= $wwwUrl ?>/js/main.js"></script>
 
   </body>
 </html>

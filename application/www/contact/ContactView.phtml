@@ -1,0 +1,21 @@
+<div class="container">
+  <form action="<?= $requestUrl ?>/contact/" method="POST">
+    <fieldset>
+      <legend>Contact me</legend>
+
+      <div  id="data" class="form-flex">
+        <input id="FirstName" type="text" name="FirstName" value="" placeholder="Your First name">
+        <input id="LastName" type="text" name="LastName" value="" placeholder="Your Family name">
+        <input id="Mail" type="text" name="Mail" value="" placeholder="Your mail*" required>
+        <textarea id="Message" name="Message" placeholder="Your message" rows="3"></textarea>
+      </div>
+
+      <div class="button">
+        <button type="submit">Send</button>
+        <button type="submit" id="deleteForm">Delete</button>
+      </div>
+
+    </fieldset>
+  </form>
+</div>
+<script type="text/javascript" src="<?= $wwwUrl ?>/js/classes/ContactSession.class.js"></script>
