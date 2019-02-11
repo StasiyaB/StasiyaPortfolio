@@ -201,17 +201,11 @@ footer {
       padding-bottom: 0; }
       footer .flex-footer div {
         margin-bottom: 1.5em; } }
-/*.flex-header {
-  nav ol li:nth-child(3) {
-    a {
-      color: $blue;
-      .fas {
-        color: $blue;
-      }
-    }
-  }
-}
-*/
+.flex-header nav ol li:nth-child(3) a {
+  color: #A2B7BF; }
+  .flex-header nav ol li:nth-child(3) a .fas {
+    color: #A2B7BF; }
+
 form fieldset {
   padding: 40px;
   border-color: #EDC1CC;
@@ -226,17 +220,20 @@ form .form-flex {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between; }
-  form .form-flex input {
+  form .form-flex input,
+  form .form-flex textarea {
     margin: 20px;
     padding: 20px;
     color: white;
     background-color: #EDC1CC;
     border: none; }
-  form .form-flex .name {
+  form .form-flex #FirstName {
     width: 45%; }
-  form .form-flex .mail {
+  form .form-flex #LastName {
     width: 45%; }
-  form .form-flex .message {
+  form .form-flex #mail {
+    width: 100%; }
+  form .form-flex #message {
     width: 100%; }
 form .button {
   text-align: center;
@@ -256,9 +253,9 @@ form .button {
 
 /* ********************* PAD ********************** */
 @media screen and (max-width: 1366px) and (min-width: 480px) {
-  form .form-flex .name {
+  form .form-flex #FirstName {
     width: 100%; }
-  form .form-flex .mail {
+  form .form-flex #LastName {
     width: 100%; }
   form .button button {
     width: 20%; } }
@@ -267,9 +264,9 @@ form .button {
   .container {
     width: 95%; }
 
-  form .form-flex .name {
+  form .form-flex #FirstName {
     width: 100%; }
-  form .form-flex .mail {
+  form .form-flex #LastName {
     width: 100%; }
   form .button button {
     width: 48%; } }

@@ -1,6 +1,6 @@
 @import "index.scss";
 
-/*.flex-header {
+.flex-header {
   nav ol li:nth-child(3) {
     a {
       color: $blue;
@@ -10,7 +10,7 @@
     }
   }
 }
-*/
+
 form {
 
   fieldset {
@@ -32,20 +32,25 @@ form {
     flex-wrap: wrap;
     justify-content: space-between;
 
-    input {
+    input,
+    textarea {
       margin: 20px;
       padding: 20px;
       color: white;
       background-color: $pink;
       border: none;
     }
-    .name {
+
+    #FirstName {
       width: 45%;
     }
-    .mail {
+    #LastName {
       width: 45%;
     }
-    .message {
+    #mail {
+      width: 100%;
+    }
+    #message {
       width: 100%;
     }
 
@@ -76,10 +81,10 @@ form {
 @media screen and (max-width: 1366px) and (min-width: 480px) {
   form {
     .form-flex {
-      .name {
+      #FirstName {
         width: 100%;
       }
-      .mail {
+      #LastName {
         width: 100%;
       }
     }
@@ -99,10 +104,10 @@ form {
 
   form {
     .form-flex {
-      .name {
+      #FirstName {
         width: 100%;
       }
-      .mail {
+      #LastName {
         width: 100%;
       }
     }
