@@ -8,9 +8,9 @@ class ContactModel {
     $dataContact->executeSql ('
               INSERT INTO
                 Contacts
-                (LastName,
-                 FirstName,
+                (Name,
                  Mail,
+                 Subject,
                  Message,
                  CreationTimestamp
                 )
@@ -18,9 +18,9 @@ class ContactModel {
                  (?, ?, ?, ?,NOW())',
 
                 [
-                  $post['LastName'],
-                  $post['FirstName'],
+                  $post['Name'],
                   $post['Mail'],
+                  $post['Subject'],
                   $post['Message']
                ]);
 

@@ -42,17 +42,18 @@ form {
       border: none;
     }
 
-    #FirstName {
-      width: 45%;
-      text-transform: capitalize;
-    }
-    #LastName {
+    #Name {
       width: 45%;
       text-transform: capitalize;
     }
     #Mail {
-      width: 100%;
+      width: 45%;
     }
+    #Subject {
+      width: 100%;
+      text-transform: capitalize;
+    }
+
     #Message {
       width: 100%;
     }
@@ -84,10 +85,10 @@ form {
 @media screen and (max-width: 1366px) and (min-width: 480px) {
   form {
     .form-flex {
-      #FirstName {
+      #Name {
         width: 100%;
       }
-      #LastName {
+      #Mail {
         width: 100%;
       }
     }
@@ -110,7 +111,7 @@ form {
       #FirstName {
         width: 100%;
       }
-      #LastName {
+      #Mail {
         width: 100%;
       }
     }

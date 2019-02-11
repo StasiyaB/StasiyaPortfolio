@@ -227,14 +227,14 @@ form .form-flex {
     color: white;
     background-color: #EDC1CC;
     border: none; }
-  form .form-flex #FirstName {
-    width: 45%;
-    text-transform: capitalize; }
-  form .form-flex #LastName {
+  form .form-flex #Name {
     width: 45%;
     text-transform: capitalize; }
   form .form-flex #Mail {
-    width: 100%; }
+    width: 45%; }
+  form .form-flex #Subject {
+    width: 100%;
+    text-transform: capitalize; }
   form .form-flex #Message {
     width: 100%; }
 form .button {
@@ -255,9 +255,9 @@ form .button {
 
 /* ********************* PAD ********************** */
 @media screen and (max-width: 1366px) and (min-width: 480px) {
-  form .form-flex #FirstName {
+  form .form-flex #Name {
     width: 100%; }
-  form .form-flex #LastName {
+  form .form-flex #Mail {
     width: 100%; }
   form .button button {
     width: 20%; } }
@@ -268,7 +268,7 @@ form .button {
 
   form .form-flex #FirstName {
     width: 100%; }
-  form .form-flex #LastName {
+  form .form-flex #Mail {
     width: 100%; }
   form .button button {
     width: 48%; } }

@@ -13,7 +13,7 @@ ContactSession.prototype.removeColor = function () {
 //remove blue color from the li
   if (window.location.href.indexOf('/id') != -1) {
     $('#id').addClass('host');
-  } else if(window.location.href.indexOf('/projects') != -1) {
+  } else if(window.location.href.indexOf('../projects') != -1) {
     $('#project').addClass('host');
   } else if (window.location.href.indexOf('/contact') != -1) {
     $('#contact').addClass('host');
@@ -24,8 +24,8 @@ ContactSession.prototype.removeColor = function () {
 ContactSession.prototype.clearForm = function(event) {
   event.preventDefault();
 
-  $('#FirstName').val('');
-  $('#LastName').val('');
+  $('#Name').val('');
+  $('#Subject').val('');
   $('#Mail').val('');
   $('#Message').val('');
 }
