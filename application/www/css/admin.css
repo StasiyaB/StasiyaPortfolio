@@ -201,5 +201,42 @@ footer {
       padding-bottom: 0; }
       footer .flex-footer div {
         margin-bottom: 1.5em; } }
+h2 .fas {
+  color: #EDC1CC; }
+h2 span {
+  font-family: "Lobster", cursive;
+  font-weight: lighter;
+  color: #A2B7BF; }
+
+.flex-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  .flex-nav .login,
+  .flex-nav .logout {
+    text-decoration: none;
+    font-size: 18px;
+    color: #FFFCF3;
+    width: 10%;
+    border: 0;
+    padding: 14px 20px; }
+  .flex-nav .login {
+    background-color: #EDC1CC; }
+  .flex-nav .logout {
+    background-color: #A2B7BF; }
+
+/* ********************* PAD ********************** */
+@media screen and (max-width: 1366px) and (min-width: 480px) {
+  .flex-nav .login,
+  .flex-nav .logout {
+    width: 20%; } }
+/* ******************** PHONE ******************** */
+@media screen and (max-width: 480px) {
+  .container {
+    width: 95%; }
+
+  .flex-nav .login,
+  .flex-nav .logout {
+    width: 48%; } }
 
 /*# sourceMappingURL=admin.css.map */

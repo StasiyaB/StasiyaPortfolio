@@ -1,1 +1,56 @@
 @import "index.scss";
+
+h2 {
+  .fas {
+    color: $pink;
+  }
+  span {
+    font-family: $fontHeader;
+    font-weight: lighter;
+    color: $blue;   
+  }
+}
+
+.flex-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  .login,
+  .logout {
+    text-decoration: none;
+    font-size:$texteSize;
+    color: $white;
+    width: 10%;
+    border: 0;
+    padding: 14px 20px;
+  }
+  .login {
+    background-color: $pink;
+  }
+  .logout {
+    background-color: $blue;
+  }
+}
+/* ********************* PAD ********************** */
+@media screen and (max-width: 1366px) and (min-width: 480px) {
+
+  .flex-nav {
+    .login,
+    .logout {
+      width: 20%;
+    }
+  }
+}
+/* ******************** PHONE ******************** */
+@media screen and (max-width: 480px) {
+  .container {
+    width: 95%;
+  }
+  .flex-nav {
+    .login,
+    .logout {
+      width: 48%;
+    }
+  }
+}

@@ -873,7 +873,8 @@ form .button {
     width: 10%;
     border: 0;
     padding: 14px 20px; }
-  form .button button:nth-child(1) {
+  form .button button:nth-child(1),
+  form .button #send {
     background-color: #EDC1CC;
     font-size: 18px;
     color: #FFFCF3; }
@@ -883,6 +884,21 @@ form .button {
     font-size: 18px;
     color: #FFFCF3; }
 
+/* ********************** ANIMATION *************** */
+.buzz {
+  animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97);
+  transform: translate3d(0, 0, 0);
+  background-color: #A2B7BF; }
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0); }
+  20%, 80% {
+    transform: translate3d(2px, 0, 0); }
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0); }
+  40%, 60% {
+    transform: translate3d(4px, 0, 0); } }
 /* ********************* PAD ********************** */
 @media screen and (max-width: 1366px) and (min-width: 480px) {
   form .form-flex #Name {
@@ -1113,5 +1129,42 @@ footer {
       padding-bottom: 0; }
       footer .flex-footer div {
         margin-bottom: 1.5em; } }
+h2 .fas {
+  color: #EDC1CC; }
+h2 span {
+  font-family: "Lobster", cursive;
+  font-weight: lighter;
+  color: #A2B7BF; }
+
+.flex-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  .flex-nav .login,
+  .flex-nav .logout {
+    text-decoration: none;
+    font-size: 18px;
+    color: #FFFCF3;
+    width: 10%;
+    border: 0;
+    padding: 14px 20px; }
+  .flex-nav .login {
+    background-color: #EDC1CC; }
+  .flex-nav .logout {
+    background-color: #A2B7BF; }
+
+/* ********************* PAD ********************** */
+@media screen and (max-width: 1366px) and (min-width: 480px) {
+  .flex-nav .login,
+  .flex-nav .logout {
+    width: 20%; } }
+/* ******************** PHONE ******************** */
+@media screen and (max-width: 480px) {
+  .container {
+    width: 95%; }
+
+  .flex-nav .login,
+  .flex-nav .logout {
+    width: 48%; } }
 
 /*# sourceMappingURL=style.css.map */

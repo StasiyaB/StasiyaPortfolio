@@ -9,7 +9,10 @@ class LocationController
 
     public function httpPostMethod(Http $http, array $formFields)
     {
-
+      var_dump($_POST);
+      $project = new ProjectModel();
+      $project->projectUpload($_POST);
+      var_dump($project);
 
     }
 }
