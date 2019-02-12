@@ -1,6 +1,6 @@
 <?php
 
-class ContactController
+class AdminController
 {
     public function httpGetMethod(Http $http, array $queryFields)
     {
@@ -9,10 +9,9 @@ class ContactController
 
     public function httpPostMethod(Http $http, array $formFields)
     {
-      //var_dump($_POST);
-      $contact = new ContactModel();
-      $contact->addContact($_POST);
-
-      //var_dump($contact);
+      $user = new AdminModel();
+      $user->connectUser($_POST);
+      var_dump($user);
+      var_dump($_SESSION);  
     }
 }

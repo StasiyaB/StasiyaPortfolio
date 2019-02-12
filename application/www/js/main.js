@@ -1,7 +1,12 @@
 'use strict';
 
-var page = new ContactSession();
+var page = new PageWalker();
+
+if (window.location.href.indexOf('/contact') != -1) {
+  var form = new ContactSession();
+}
 console.log('bug');
+
 /////////////////////////////////////////////////////////////////////////////////////////
 // FONCTIONS                                                                           //
 /////////////////////////////////////////////////////////////////////////////////////////

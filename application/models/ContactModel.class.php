@@ -6,6 +6,7 @@ class ContactModel {
 
     $dataContact = new Database ();
     $dataContact->executeSql ('
+
               INSERT INTO
                 Contacts
                 (Name,
@@ -28,51 +29,28 @@ class ContactModel {
     //$http->redirectTo('/');
   }
 
-/*  public function addUser($post) {
-    //$hashPwd = $this->hashPassword($post['password']);
+  public function createMail($post) {
+
+    $dataContact = new Database ();
+    $email = $dataContact->queryOne ('
+
+                  SELECT *
+                  FROM Users
+                  WHERE Mail =?',
+                  [ $post['Mail']]
+              );
+      var_dump($email);
+
+        $to      = $post['Mail'];
+        $subject = $post['Subject'];
+        $message = 'Hello, thank\'s for you message I will contact you shortly.';
+        $headers = array(
+        'From' => 'baryash.anastasiya@gmail.com',
+        'Reply-To' => 'baryash.anastasiya@gmail.com',
+        'X-Mailer' => 'PHP/' . phpversion() );
+
+        mail($to, $subject, $message, $headers);
 
   }
 
-  public function connectUser($post) {
-
-		$dataClient = new Database();
-
-		$client = $dataClient->queryOne ('
-
-              SELECT *
-              FROM Users
-              WHERE Email =?',
-              [ $post['email']]
-            );
-
-		var_dump($client);
-
-		if( $client != false && $this->verifyPassword($post['password'], $client['Password']) == true ) {
-
-			$_SESSION['id']        = $client['Id'];
-			$_SESSION['email']     = $client['Email'];
-			$_SESSION['firstName'] = $client['FirstName'];
-			$_SESSION['lastName']  = $client['LastName'];
-      $_SESSION['address']   = $client['Address'];
-      $_SESSION['city']      = $client['City'];
-      $_SESSION['zipCode']   = $client['ZipCode'];
-
-      $http = new Http();
-      $http->redirectTo('/');
-
-		}
-	}
-
-  private function hashPassword($password)
-    {
-
-        $salt = '$2y$11$'.substr(bin2hex(openssl_random_pseudo_bytes(32)), 0, 22);
-
-        return crypt($password, $salt);
-    }
-
-  private function verifyPassword($password, $hashedPassword)
-	  {
-	     return crypt($password, $hashedPassword) == $hashedPassword;
-	  }*/
 }

@@ -1,6 +1,6 @@
 <?php
 
-class ContactController
+class LocationController
 {
     public function httpGetMethod(Http $http, array $queryFields)
     {
@@ -9,10 +9,7 @@ class ContactController
 
     public function httpPostMethod(Http $http, array $formFields)
     {
-      //var_dump($_POST);
-      $contact = new ContactModel();
-      $contact->addContact($_POST);
 
-      //var_dump($contact);
+
     }
 }
