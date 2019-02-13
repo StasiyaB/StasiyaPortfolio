@@ -2,12 +2,12 @@
 
 class ProjectModel {
 
-  public function projectUpload($post) {
+  public function projectUpload($post, $files) {
 
     $dataProject = new Database ();
     $dataProject->executeSql('
               INSERT INTO
-                Users
+                Projects
                 (ProjectName,
                  Image,
                  ProjectDescription,
@@ -18,10 +18,24 @@ class ProjectModel {
 
                 [
                   $post['ProjectName'],
-                  $post['Image'],
+                  $files['Image']['name'],
                   $post['ProjectDescription'],
                   $post['TechnologyUsed'],
                   $post['URL']
                ]);
+               $http = new Http();
+               $http->moveUploadedFile('Image','/images/upload');
+  }
+
+  public function showProject() {
+
+    $dataProject = new Database ();
+    $site = $dataProject->query ('
+
+                      SELECT *
+                      FROM Projects',
+                      []
+                  );
+    return $site;
   }
 }

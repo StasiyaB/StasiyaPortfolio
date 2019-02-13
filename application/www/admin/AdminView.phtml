@@ -1,19 +1,20 @@
 
 <div class="container">
-  <form action="<?= $requestUrl ?>/admin/" method="POST">
+  <form action="<?= $requestUrl ?>/admin/" method="POST" onsubmit="return formValidate.buzz()">
     <fieldset>
       <legend>Identify yourself</legend>
 
       <div class="form-flex">
-        <input id="MailLog" type="text" name="Mail" value="" placeholder="Your mail">
+        <input id="Mail" type="text" name="Mail" value="" placeholder="Your mail">
         <input id="PasswordLog" name="Password" value="" placeholder="Password">
       </div>
 
       <div class="button">
         <!--<button class="log-button" type="submit">Login</button>-->
-        <button id="deleteForm" type="submit">Login</button>
+        <button id="blue" type="submit">Login</button>
       </div>
 
     </fieldset>
   </form>
 </div>
+<script type="text/javascript" src="<?= $wwwUrl ?>/js/classes/FormValidate.class.js"></script>

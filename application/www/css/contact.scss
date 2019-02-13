@@ -49,7 +49,11 @@ form {
       width: 45%;
       text-transform: capitalize;
     }
-    #Mail {
+    #Mail,
+    #PasswordLog,
+    #Image,
+    #Techno,
+    #URL {
       width: 45%;
     }
     #Subject {
@@ -57,18 +61,12 @@ form {
       text-transform: capitalize;
     }
 
-    #Message {
+    #Message,
+    #Password,
+    #Description{
       width: 100%;
     }
-    #Password {
-      width: 100%;
-    }
-    #MailLog {
-      width: 45%;
-    }
-    #PasswordLog {
-      width: 45%;
-    }
+
 
   }
 
@@ -88,7 +86,8 @@ form {
       color: $white;
     }
     button:nth-child(2),
-    #deleteForm {
+    #deleteForm,
+    #blue {
       background-color: $blue;
       font-size:$texteSize;
       color: $white;
@@ -129,10 +128,12 @@ form {
       #Mail {
         width: 100%;
       }
-      #MailLog {
-        width: 100%;
-      }
-      #PasswordLog {
+
+      #PasswordLog,
+      #PasswordLog,
+      #Image,
+      #Techno,
+      #URL {
         width: 100%;
       }
     }
@@ -158,10 +159,12 @@ form {
       #Mail {
         width: 100%;
       }
-      #MailLog {
-        width: 100%;
-      }
-      #PasswordLog {
+
+      #PasswordLog,
+      #PasswordLog,
+      #Image,
+      #Techno,
+      #URL {
         width: 100%;
       }
     }

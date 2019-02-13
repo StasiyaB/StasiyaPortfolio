@@ -232,19 +232,19 @@ form .form-flex {
   form .form-flex #Name {
     width: 45%;
     text-transform: capitalize; }
-  form .form-flex #Mail {
+  form .form-flex #Mail,
+  form .form-flex #PasswordLog,
+  form .form-flex #Image,
+  form .form-flex #Techno,
+  form .form-flex #URL {
     width: 45%; }
   form .form-flex #Subject {
     width: 100%;
     text-transform: capitalize; }
-  form .form-flex #Message {
+  form .form-flex #Message,
+  form .form-flex #Password,
+  form .form-flex #Description {
     width: 100%; }
-  form .form-flex #Password {
-    width: 100%; }
-  form .form-flex #MailLog {
-    width: 45%; }
-  form .form-flex #PasswordLog {
-    width: 45%; }
 form .button {
   text-align: center;
   padding-top: 24px; }
@@ -258,7 +258,8 @@ form .button {
     font-size: 18px;
     color: #FFFCF3; }
   form .button button:nth-child(2),
-  form .button #deleteForm {
+  form .button #deleteForm,
+  form .button #blue {
     background-color: #A2B7BF;
     font-size: 18px;
     color: #FFFCF3; }
@@ -284,9 +285,11 @@ form .button {
     width: 100%; }
   form .form-flex #Mail {
     width: 100%; }
-  form .form-flex #MailLog {
-    width: 100%; }
-  form .form-flex #PasswordLog {
+  form .form-flex #PasswordLog,
+  form .form-flex #PasswordLog,
+  form .form-flex #Image,
+  form .form-flex #Techno,
+  form .form-flex #URL {
     width: 100%; }
   form .button button {
     width: 20%; } }
@@ -299,9 +302,11 @@ form .button {
     width: 100%; }
   form .form-flex #Mail {
     width: 100%; }
-  form .form-flex #MailLog {
-    width: 100%; }
-  form .form-flex #PasswordLog {
+  form .form-flex #PasswordLog,
+  form .form-flex #PasswordLog,
+  form .form-flex #Image,
+  form .form-flex #Techno,
+  form .form-flex #URL {
     width: 100%; }
   form .button button {
     width: 48%; } }

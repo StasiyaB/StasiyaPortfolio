@@ -1,4 +1,5 @@
 <div class="container">
+    <h2>Some of my projects</h2>
 
     <div class="flexslider">
       <ul class="slides">
@@ -13,10 +14,33 @@
         </li>
       </ul>
     </div>
-    <div class="flex-projects">
-      
-    </div>
 
+    <h3 class="clearfix">More details and description</h3>
+    <div class="flex-projects">
+  <!-- SECTION  -->
+        <?php foreach($projects as $project) : ?>
+          <section class="section-projects">
+  <!-- OVERLAY  -->
+            <div class="overlay">
+  <!-- DESCRIPTION  -->
+              <div class="description">
+                <p>
+                  <?=$project['ProjectDescription']?>
+                </p>
+                <h4>
+                  <i class="fas fa-laptop-code"></i> <?=$project['TechnologyUsed']?>
+                </h4>
+                <a href="<?=$project['URL']?>">Press to visit</a>
+              </div>
+  <!-- END OF DESCRIPTION  -->
+              <img src="<?= $wwwUrl ?>/images/upload/<?=$project['Image']?>" alt="<?=$project['ProjectName']?>">
+              <h4><?=$project['ProjectName']?></h4>
+            </div>
+  <!-- END OF OVERLAY -->
+          </section>
+        <?php endforeach ?>
+  <!-- END OF SECTION -->
+    </div>
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>

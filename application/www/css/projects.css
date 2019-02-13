@@ -11,13 +11,17 @@ html {
 .container {
   width: 80%;
   max-width: 1100px;
-  margin: auto;
-  padding: 120px 40px; }
+  margin: auto; }
   .container h3 {
     font-weight: lighter;
     color: #A2B7BF;
     text-align: center;
     padding-bottom: 2em; }
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
 
 body {
   font-family: "Cuprum", sans-serif;
@@ -38,6 +42,8 @@ body {
     text-align: center; }
   body h3 {
     font-size: 30px; }
+  body h4 {
+    font-size: 25px; }
 
 /* ********************************************************************
 *************************** HEADER ***********************************
@@ -205,5 +211,19 @@ footer {
   color: #A2B7BF; }
   .flex-header .host a .fas {
     color: #A2B7BF; }
+
+.flex-projects {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+  .flex-projects .section-projects {
+    width: 330px;
+    height: 330px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+    padding: 20px; }
+    .flex-projects .section-projects .overlay {
+      text-align: center; }
+    .flex-projects .section-projects img {
+      width: 30%; }
 
 /*# sourceMappingURL=projects.css.map */

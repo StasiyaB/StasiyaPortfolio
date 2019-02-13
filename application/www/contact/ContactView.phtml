@@ -1,5 +1,5 @@
 <div class="container">
-  <form name="Contact" action="<?= $requestUrl ?>/contact/" method="POST">
+  <form action="<?= $requestUrl ?>/contact/" method="POST" onsubmit="return formValidate.buzz()">
     <fieldset>
       <legend>Contact me</legend>
 
@@ -19,3 +19,4 @@
   </form>
 </div>
 <script type="text/javascript" src="<?= $wwwUrl ?>/js/classes/ContactSession.class.js"></script>
+<script type="text/javascript" src="<?= $wwwUrl ?>/js/classes/FormValidate.class.js"></script>

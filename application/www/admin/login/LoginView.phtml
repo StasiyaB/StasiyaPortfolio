@@ -1,5 +1,5 @@
 <div class="container">
-  <form action="<?= $requestUrl ?>/login/" method="POST">
+  <form action="<?= $requestUrl ?>/admin/login/" method="POST" onsubmit="return formValidate.buzz()">
     <fieldset>
       <legend>Identify yourself</legend>
 
@@ -12,9 +12,10 @@
 
       <div class="button">
         <!--<button>Login</button>-->
-        <button type="submit">Sign in</button>
+        <button id="blue" type="submit">Sign in</button>
       </div>
 
     </fieldset>
   </form>
 </div>
+<script type="text/javascript" src="<?= $wwwUrl ?>/js/classes/FormValidate.class.js"></script>
