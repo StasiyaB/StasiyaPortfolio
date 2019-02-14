@@ -15,7 +15,7 @@
       </ul>
     </div>
 
-    <h3 class="clearfix">More details and description</h3>
+    <h3>More details and description</h3>
     <div class="flex-projects">
   <!-- SECTION  -->
         <?php foreach($projects as $project) : ?>
@@ -27,14 +27,14 @@
                 <p>
                   <?=$project['ProjectDescription']?>
                 </p>
-                <h4>
+                <h4 class="tools">
                   <i class="fas fa-laptop-code"></i> <?=$project['TechnologyUsed']?>
                 </h4>
-                <a href="<?=$project['URL']?>">Press to visit</a>
+                <a href="<?=$project['URL']?>">Click to visit <i class="fas fa-arrow-circle-right"></i></a>
               </div>
   <!-- END OF DESCRIPTION  -->
               <img src="<?= $wwwUrl ?>/images/upload/<?=$project['Image']?>" alt="<?=$project['ProjectName']?>">
-              <h4><?=$project['ProjectName']?></h4>
+              <h4 class="heading"><span><i class="fas fa-arrow-circle-up"></i></i></span><?=$project['ProjectName']?></h4>
             </div>
   <!-- END OF OVERLAY -->
           </section>
