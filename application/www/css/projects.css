@@ -44,7 +44,7 @@ body {
   body h3 {
     font-size: 30px; }
   body h4 {
-    font-size: 25px; }
+    font-size: 20px; }
 
 /* ********************************************************************
 *************************** HEADER ***********************************
@@ -238,7 +238,7 @@ footer {
       font-weight: lighter;
       position: relative;
       margin: auto;
-      font-size: 25px; }
+      font-size: 20px; }
     .flex-projects .section-projects .overlay {
       text-align: center;
       position: relative;

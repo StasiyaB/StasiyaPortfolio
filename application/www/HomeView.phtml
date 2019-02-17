@@ -1,67 +1,57 @@
 <!-- Home page -->
 
 <div class="container">
-  <h3>My slills in Web-Developpement :</h3>
+  <h3 class="h3Index">My slills in Web-Developpement * :</h3>
   <ul class="flex-list">
     <li>
       <div class="tooltip">
-        <svg width="100" height="100">
-          <circle cx="50" cy="50" r="40" stroke="#e34c26" stroke-width="4" fill="none" />
-        </svg>
-        <div class="box-tooltip">
-          <div class="tooltip-text">
-            HTML
-          </div>
+        <canvas id="canvas" width="100" height="100"></canvas>
+        <span id="percent"></span>
+        <div class="tooltip-text animation">
+          HTML
+        </div>
+      </div>
+
+    </li>
+    <li>
+      <div class="tooltip">
+        <canvas id="canvas2" width="100" height="100"></canvas>
+        <span id="percent2"></span>
+        <div class="tooltip-text animation2">
+          CSS
         </div>
       </div>
     </li>
     <li>
       <div class="tooltip">
-        <svg width="100" height="100">
-          <circle cx="50" cy="50" r="40" stroke="#0070BB" stroke-width="4" fill="none" />
-        </svg>
-        <div class="box-tooltip">
-          <div class="tooltip-text">
-            CSS
-          </div>
+        <canvas id="canvas3" width="100" height="100"></canvas>
+        <span id="percent3"></span>
+        <div class="tooltip-text animation3">
+          JS
         </div>
       </div>
     </li>
     <li>
       <div class="tooltip">
-        <svg width="100" height="100">
-          <circle cx="50" cy="50" r="40" stroke="#f0db4f" stroke-width="4" fill="none" />
-        </svg>
-        <div class="box-tooltip">
-          <div class="tooltip-text">
-            JS
-          </div>
+        <canvas id="canvas4" width="100" height="100"></canvas>
+        <span id="percent4"></span>
+        <div class="tooltip-text animation4">
+          PHP
         </div>
       </div>
     </li>
     <li>
       <div class="tooltip">
-        <svg width="100" height="100">
-          <circle cx="50" cy="50" r="40" stroke="#8993be" stroke-width="4" fill="none" />
-        </svg>
-        <div class="box-tooltip">
-          <div class="tooltip-text">
-            PHP
-          </div>
-        </div>
-      </div>
-    </li>
-    <li>
-      <div class="tooltip">
-        <svg width="100" height="100">
-          <circle cx="50" cy="50" r="40" stroke="#00758F" stroke-width="4" fill="none" />
-        </svg>
-        <div class="box-tooltip">
-          <div class="tooltip-text">
-            MySQL
-          </div>
+        <canvas id="canvas5" width="100" height="100"></canvas>
+        <span id="percent5"></span>
+        <div class="tooltip-text animation5">
+          MySQL
         </div>
       </div>
     </li>
   </ul>
+  <div class="note">
+    * The percentage rate is relative and reveals the Knowledge level which I've obtained up to the moment. Namely: averaging correlation of the syntax knowledges, the skills level and the regularity of coding on each of the represented languages.
+  </div>
 </div>
+<script type="text/javascript" src="<?= $wwwUrl ?>/js/classes/Canvas.class.js"></script>

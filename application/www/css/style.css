@@ -116,17 +116,105 @@ body {
 /* *******************************************************************
 *************************** MAIN *************************************
 ******************************************************************** */
+main .h3Index {
+  padding-bottom: 0; }
+main .note {
+  font-size: 14px;
+  text-align: justify;
+  margin-top: 110px;
+  margin-bottom: 30px; }
 main .flex-list {
   display: flex;
   justify-content: space-between;
   padding-left: 0; }
   main .flex-list li {
     list-style: none; }
-    main .flex-list li canvas {
-      display: block; }
-  main .flex-list .tooltip-text {
-    text-align: center; }
+    main .flex-list li .tooltip {
+      position: relative;
+      width: 100px;
+      height: 100px;
+      display: block;
+      margin-top: 30px; }
+      main .flex-list li .tooltip span#percent,
+      main .flex-list li .tooltip span#percent2,
+      main .flex-list li .tooltip span#percent3,
+      main .flex-list li .tooltip span#percent4,
+      main .flex-list li .tooltip span#percent5 {
+        display: block;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        font-size: 18px;
+        transform: translate(-50%, -50%);
+        color: #FFFCF3; }
+      main .flex-list li .tooltip span#percent::after,
+      main .flex-list li .tooltip span#percent2::after,
+      main .flex-list li .tooltip span#percent3::after,
+      main .flex-list li .tooltip span#percent4::after,
+      main .flex-list li .tooltip span#percent5::after {
+        content: '%'; }
+      main .flex-list li .tooltip .tooltip-text {
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        transform: scale(0);
+        filter: blur(10px); }
 
+/* ********************** ANIMATION ************************ */
+main .flex-list li .tooltip .animation {
+  animation-name: zoomIn;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 2s;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running; }
+main .flex-list li .tooltip .animation2 {
+  animation-name: zoomIn;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 3s;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running; }
+main .flex-list li .tooltip .animation3 {
+  animation-name: zoomIn;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 4s;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running; }
+main .flex-list li .tooltip .animation4 {
+  animation-name: zoomIn;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 5s;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running; }
+main .flex-list li .tooltip .animation5 {
+  animation-name: zoomIn;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 6s;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running; }
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.3);
+    filter: blur(10px); }
+  40% {
+    transform: scale(1); }
+  100% {
+    filter: blur(0);
+    transform: scale(1); } }
 /* ********************************************************************
 *************************** FOOTER *************************************
 ********************************************************************* */
@@ -326,17 +414,105 @@ body {
 /* *******************************************************************
 *************************** MAIN *************************************
 ******************************************************************** */
+main .h3Index {
+  padding-bottom: 0; }
+main .note {
+  font-size: 14px;
+  text-align: justify;
+  margin-top: 110px;
+  margin-bottom: 30px; }
 main .flex-list {
   display: flex;
   justify-content: space-between;
   padding-left: 0; }
   main .flex-list li {
     list-style: none; }
-    main .flex-list li canvas {
-      display: block; }
-  main .flex-list .tooltip-text {
-    text-align: center; }
+    main .flex-list li .tooltip {
+      position: relative;
+      width: 100px;
+      height: 100px;
+      display: block;
+      margin-top: 30px; }
+      main .flex-list li .tooltip span#percent,
+      main .flex-list li .tooltip span#percent2,
+      main .flex-list li .tooltip span#percent3,
+      main .flex-list li .tooltip span#percent4,
+      main .flex-list li .tooltip span#percent5 {
+        display: block;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        font-size: 18px;
+        transform: translate(-50%, -50%);
+        color: #FFFCF3; }
+      main .flex-list li .tooltip span#percent::after,
+      main .flex-list li .tooltip span#percent2::after,
+      main .flex-list li .tooltip span#percent3::after,
+      main .flex-list li .tooltip span#percent4::after,
+      main .flex-list li .tooltip span#percent5::after {
+        content: '%'; }
+      main .flex-list li .tooltip .tooltip-text {
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        transform: scale(0);
+        filter: blur(10px); }
 
+/* ********************** ANIMATION ************************ */
+main .flex-list li .tooltip .animation {
+  animation-name: zoomIn;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 2s;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running; }
+main .flex-list li .tooltip .animation2 {
+  animation-name: zoomIn;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 3s;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running; }
+main .flex-list li .tooltip .animation3 {
+  animation-name: zoomIn;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 4s;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running; }
+main .flex-list li .tooltip .animation4 {
+  animation-name: zoomIn;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 5s;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running; }
+main .flex-list li .tooltip .animation5 {
+  animation-name: zoomIn;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 6s;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running; }
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.3);
+    filter: blur(10px); }
+  40% {
+    transform: scale(1); }
+  100% {
+    filter: blur(0);
+    transform: scale(1); } }
 /* ********************************************************************
 *************************** FOOTER *************************************
 ********************************************************************* */
@@ -543,17 +719,105 @@ body {
 /* *******************************************************************
 *************************** MAIN *************************************
 ******************************************************************** */
+main .h3Index {
+  padding-bottom: 0; }
+main .note {
+  font-size: 14px;
+  text-align: justify;
+  margin-top: 110px;
+  margin-bottom: 30px; }
 main .flex-list {
   display: flex;
   justify-content: space-between;
   padding-left: 0; }
   main .flex-list li {
     list-style: none; }
-    main .flex-list li canvas {
-      display: block; }
-  main .flex-list .tooltip-text {
-    text-align: center; }
+    main .flex-list li .tooltip {
+      position: relative;
+      width: 100px;
+      height: 100px;
+      display: block;
+      margin-top: 30px; }
+      main .flex-list li .tooltip span#percent,
+      main .flex-list li .tooltip span#percent2,
+      main .flex-list li .tooltip span#percent3,
+      main .flex-list li .tooltip span#percent4,
+      main .flex-list li .tooltip span#percent5 {
+        display: block;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        font-size: 18px;
+        transform: translate(-50%, -50%);
+        color: #FFFCF3; }
+      main .flex-list li .tooltip span#percent::after,
+      main .flex-list li .tooltip span#percent2::after,
+      main .flex-list li .tooltip span#percent3::after,
+      main .flex-list li .tooltip span#percent4::after,
+      main .flex-list li .tooltip span#percent5::after {
+        content: '%'; }
+      main .flex-list li .tooltip .tooltip-text {
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        transform: scale(0);
+        filter: blur(10px); }
 
+/* ********************** ANIMATION ************************ */
+main .flex-list li .tooltip .animation {
+  animation-name: zoomIn;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 2s;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running; }
+main .flex-list li .tooltip .animation2 {
+  animation-name: zoomIn;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 3s;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running; }
+main .flex-list li .tooltip .animation3 {
+  animation-name: zoomIn;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 4s;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running; }
+main .flex-list li .tooltip .animation4 {
+  animation-name: zoomIn;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 5s;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running; }
+main .flex-list li .tooltip .animation5 {
+  animation-name: zoomIn;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 6s;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running; }
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.3);
+    filter: blur(10px); }
+  40% {
+    transform: scale(1); }
+  100% {
+    filter: blur(0);
+    transform: scale(1); } }
 /* ********************************************************************
 *************************** FOOTER *************************************
 ********************************************************************* */
@@ -869,17 +1133,105 @@ body {
 /* *******************************************************************
 *************************** MAIN *************************************
 ******************************************************************** */
+main .h3Index {
+  padding-bottom: 0; }
+main .note {
+  font-size: 14px;
+  text-align: justify;
+  margin-top: 110px;
+  margin-bottom: 30px; }
 main .flex-list {
   display: flex;
   justify-content: space-between;
   padding-left: 0; }
   main .flex-list li {
     list-style: none; }
-    main .flex-list li canvas {
-      display: block; }
-  main .flex-list .tooltip-text {
-    text-align: center; }
+    main .flex-list li .tooltip {
+      position: relative;
+      width: 100px;
+      height: 100px;
+      display: block;
+      margin-top: 30px; }
+      main .flex-list li .tooltip span#percent,
+      main .flex-list li .tooltip span#percent2,
+      main .flex-list li .tooltip span#percent3,
+      main .flex-list li .tooltip span#percent4,
+      main .flex-list li .tooltip span#percent5 {
+        display: block;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        font-size: 18px;
+        transform: translate(-50%, -50%);
+        color: #FFFCF3; }
+      main .flex-list li .tooltip span#percent::after,
+      main .flex-list li .tooltip span#percent2::after,
+      main .flex-list li .tooltip span#percent3::after,
+      main .flex-list li .tooltip span#percent4::after,
+      main .flex-list li .tooltip span#percent5::after {
+        content: '%'; }
+      main .flex-list li .tooltip .tooltip-text {
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        transform: scale(0);
+        filter: blur(10px); }
 
+/* ********************** ANIMATION ************************ */
+main .flex-list li .tooltip .animation {
+  animation-name: zoomIn;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 2s;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running; }
+main .flex-list li .tooltip .animation2 {
+  animation-name: zoomIn;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 3s;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running; }
+main .flex-list li .tooltip .animation3 {
+  animation-name: zoomIn;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 4s;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running; }
+main .flex-list li .tooltip .animation4 {
+  animation-name: zoomIn;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 5s;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running; }
+main .flex-list li .tooltip .animation5 {
+  animation-name: zoomIn;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 6s;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running; }
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.3);
+    filter: blur(10px); }
+  40% {
+    transform: scale(1); }
+  100% {
+    filter: blur(0);
+    transform: scale(1); } }
 /* ********************************************************************
 *************************** FOOTER *************************************
 ********************************************************************* */
@@ -1188,17 +1540,105 @@ body {
 /* *******************************************************************
 *************************** MAIN *************************************
 ******************************************************************** */
+main .h3Index {
+  padding-bottom: 0; }
+main .note {
+  font-size: 14px;
+  text-align: justify;
+  margin-top: 110px;
+  margin-bottom: 30px; }
 main .flex-list {
   display: flex;
   justify-content: space-between;
   padding-left: 0; }
   main .flex-list li {
     list-style: none; }
-    main .flex-list li canvas {
-      display: block; }
-  main .flex-list .tooltip-text {
-    text-align: center; }
+    main .flex-list li .tooltip {
+      position: relative;
+      width: 100px;
+      height: 100px;
+      display: block;
+      margin-top: 30px; }
+      main .flex-list li .tooltip span#percent,
+      main .flex-list li .tooltip span#percent2,
+      main .flex-list li .tooltip span#percent3,
+      main .flex-list li .tooltip span#percent4,
+      main .flex-list li .tooltip span#percent5 {
+        display: block;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        font-size: 18px;
+        transform: translate(-50%, -50%);
+        color: #FFFCF3; }
+      main .flex-list li .tooltip span#percent::after,
+      main .flex-list li .tooltip span#percent2::after,
+      main .flex-list li .tooltip span#percent3::after,
+      main .flex-list li .tooltip span#percent4::after,
+      main .flex-list li .tooltip span#percent5::after {
+        content: '%'; }
+      main .flex-list li .tooltip .tooltip-text {
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        transform: scale(0);
+        filter: blur(10px); }
 
+/* ********************** ANIMATION ************************ */
+main .flex-list li .tooltip .animation {
+  animation-name: zoomIn;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 2s;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running; }
+main .flex-list li .tooltip .animation2 {
+  animation-name: zoomIn;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 3s;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running; }
+main .flex-list li .tooltip .animation3 {
+  animation-name: zoomIn;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 4s;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running; }
+main .flex-list li .tooltip .animation4 {
+  animation-name: zoomIn;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 5s;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running; }
+main .flex-list li .tooltip .animation5 {
+  animation-name: zoomIn;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 6s;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running; }
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.3);
+    filter: blur(10px); }
+  40% {
+    transform: scale(1); }
+  100% {
+    filter: blur(0);
+    transform: scale(1); } }
 /* ********************************************************************
 *************************** FOOTER *************************************
 ********************************************************************* */
