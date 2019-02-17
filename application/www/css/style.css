@@ -257,6 +257,8 @@ footer {
   .container {
     padding-top: 40px;
     padding-bottom: 40px; }
+    .container h3 {
+      padding-bottom: 0; }
 
   header {
     margin: 20px;
@@ -555,6 +557,8 @@ footer {
   .container {
     padding-top: 40px;
     padding-bottom: 40px; }
+    .container h3 {
+      padding-bottom: 0; }
 
   header {
     margin: 20px;
@@ -601,6 +605,43 @@ footer {
   .flex-header .host a .fas {
     color: #A2B7BF; }
 
+.id img {
+  float: left;
+  border-radius: 8px;
+  opacity: 0.4; }
+.id img:hover {
+  opacity: 1; }
+
+.about {
+  padding-left: 244px;
+  text-align: justify; }
+  .about p {
+    line-height: 1.5em; }
+  .about span {
+    color: #EDC1CC; }
+  .about span a {
+    color: #EDC1CC; }
+  .about span a:hover {
+    color: #A2B7BF;
+    text-decoration: none; }
+
+/* ********************* PAD ********************** */
+@media screen and (max-width: 1024px) and (min-width: 480px) {
+  .id img {
+    opacity: 1; } }
+/* ******************** PHONE ******************** */
+@media screen and (max-width: 480px) {
+  article h3 {
+    padding-bottom: 0; }
+
+  .id {
+    text-align: center; }
+    .id img {
+      float: none;
+      opacity: 1; }
+
+  .about {
+    padding-left: 0; } }
 /* *********************************************************************
 *************************** BODY *************************************
 ******************************************************************** */
@@ -860,6 +901,8 @@ footer {
   .container {
     padding-top: 40px;
     padding-bottom: 40px; }
+    .container h3 {
+      padding-bottom: 0; }
 
   header {
     margin: 20px;
@@ -1274,6 +1317,8 @@ footer {
   .container {
     padding-top: 40px;
     padding-bottom: 40px; }
+    .container h3 {
+      padding-bottom: 0; }
 
   header {
     margin: 20px;
@@ -1681,6 +1726,8 @@ footer {
   .container {
     padding-top: 40px;
     padding-bottom: 40px; }
+    .container h3 {
+      padding-bottom: 0; }
 
   header {
     margin: 20px;
