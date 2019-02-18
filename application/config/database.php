@@ -5,7 +5,7 @@
  */
 
 $config['dsn']      = 'mysql:host=localhost;dbname=portfolio';
-$config['password'] = '';
+$config['password'] = 'troiswa';
 $config['user']     = 'root';
 
 /*

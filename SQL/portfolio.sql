@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost
--- Généré le :  mer. 13 fév. 2019 à 17:21
+-- Généré le :  lun. 18 fév. 2019 à 12:15
 -- Version du serveur :  5.7.24-0ubuntu0.16.04.1
 -- Version de PHP :  7.2.11-2+ubuntu16.04.1+deb.sury.org+1
 
@@ -68,9 +68,17 @@ CREATE TABLE `Projects` (
 --
 
 INSERT INTO `Projects` (`Id`, `ProjectName`, `Image`, `ProjectDescription`, `TechnologyUsed`, `URL`) VALUES
-(10, 'haha', 'desktop-about.jpg', 'reere', 'HTML', 'ss'),
-(11, 'haha', 'desktop-about.jpg', 'reere', 'HTML', 'ss'),
-(14, 'SS', 'desktop-product.jpg', '060606060', 'SS', 'ss');
+(19, 'Tic-Tac-Toe', '01.png', 'Practice of POO and Canvas usage ', 'HTML, CSS, JS, Canvas, POO', ''),
+(20, 'Ardoise Magique', '02.png', 'Practice of POO usage: there is possibility to choose the color and weight of the pen as well as generate a new color.', 'HTML, CSS, JS, Canvas, POO', ''),
+(21, 'Address Book', '03.png', 'Add, delete and edit functions on JS', 'HTML, CSS, JS', ''),
+(22, 'Todo List', '04.png', 'Practice of a Local Storage usage: add, delete and edit functions on PHP', 'HTML, CSS, PHP, Local Storage', ''),
+(26, 'Masterpiece', '05.png', 'Practice of POO and Canvas usage. Due to the mouse position click left the circles of different sizes and colors.', 'HTML, CSS, JS, Canvas, POO', ''),
+(27, 'Object Fight', '06.png', 'POO practice', 'HTML, CSS, JS, POO', ''),
+(28, 'Rocket', '07.png', 'SetInterval Function launches the Rocket', 'HTML, CSS, JS, DOM', ''),
+(29, 'Blog', '08.png', 'Blog site with admin and user access. Administrator has the possibility add, delete authors, posts and comments. Edit the role of Authors. User can read posts  and add comments.', 'HTML, CSS, PHP, MySQL; $_SESSION, $_GET, $_POST', ''),
+(30, 'Movie searching engine', '10.png', 'Practice of API usage and treatment', 'HTML, CSS, JS, DOM, JQuery, API', ''),
+(31, 'Carousel', '11.png', 'Possibility to launch slider to switch the images in the loop, as well as forward, revers and pause the movement with the help of the mouse or from the keyboard.', 'HTML, CSS, JS, DOM', ''),
+(33, 'Restaurant', '09.png', 'Site of the online restaurant. The user should be signed up and loged in the site to have the possibility to order food and book the place in the restaurant. There\'s possibility to choose and add food, remove it from the bascket and proceed with the payment of the order.', 'HTML, CSS, JS, PHP, MySQL, JQuery; MicroKernel, Objects, Functions, Loops, DOM, $_SESSION, $_POST, $_GET, Local Storage', '');
 
 -- --------------------------------------------------------
 
@@ -129,7 +137,7 @@ ALTER TABLE `Contacts`
 -- AUTO_INCREMENT pour la table `Projects`
 --
 ALTER TABLE `Projects`
-  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
 
 --
 -- AUTO_INCREMENT pour la table `Users`

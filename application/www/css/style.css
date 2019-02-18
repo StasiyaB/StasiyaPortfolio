@@ -994,13 +994,14 @@ footer {
         color: #EDC1CC;
         font-size: 20px; }
       .flex-projects .section-projects .description a:hover {
-        color: RGBA(237, 193, 204, 0.61); }
+        color: #A2B7BF; }
     .flex-projects .section-projects .description > * {
       display: none; }
     .flex-projects .section-projects .tools {
       color: #A2B7BF;
       overflow: hidden;
-      font-size: 20px; }
+      font-size: 16px;
+      font-weight: lighter; }
 
 .flex-projects .section-projects:hover .overlay img {
   opacity: 0;

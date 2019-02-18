@@ -67,6 +67,7 @@
       height: 220px;
 
     }
+    
     .description {
     	position: absolute;
     	top: 0px;
@@ -78,7 +79,7 @@
         font-size:$navSize;
       }
       a:hover {
-        color:RGBA(237,193,204,0.61);
+        color:$blue;
       }
     }
     .description > * {
@@ -88,7 +89,8 @@
     .tools {
       color:$blue;
       overflow: hidden;
-      font-size:$navSize;
+      font-size:$inputSize;
+      font-weight:lighter;
     }
   }
 }

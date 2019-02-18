@@ -33,7 +33,8 @@ class ProjectModel {
     $site = $dataProject->query ('
 
                       SELECT *
-                      FROM Projects',
+                      FROM Projects
+                      ORDER BY Id DESC',
                       []
                   );
     return $site;

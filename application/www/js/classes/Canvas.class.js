@@ -10,7 +10,7 @@ var Canvas = function(canvas, percent, rgb, hexa, rate) {
 
   this.posX       = this.can.width / 2,
   this.posY       = this.can.height / 2,
-  this.fps        = 1000 / 200,
+  this.fps        = 1000/200,
   this.percent    = 0,
   this.onePercent = 360 / 100,
   this.result     = this.onePercent * parseInt(rate);

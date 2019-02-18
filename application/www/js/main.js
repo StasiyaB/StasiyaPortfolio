@@ -17,7 +17,7 @@ if (window.location.href.indexOf('/admin/location/') != -1 ){
   var project = new ProjectSession();
 }
 
-if (window.location.href.indexOf('/') != -1 ){
+if (window.location.href.indexOf('/admin') == -1 && window.location.href.indexOf('/contact') == -1  && window.location.href.indexOf('/project') == -1 && window.location.href.indexOf('/id') == -1){
   console.log('circle');
   var canvas1 = new Canvas('canvas',"percent",  "RGBA(227,76,38,0.30)", '#e34c26', 90);
   var canvas2 = new Canvas('canvas2',"percent2", "RGBA(0,112,187,0.30)", '#0070BB', 85);
