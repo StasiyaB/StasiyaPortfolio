@@ -1,0 +1,21 @@
+<div class="container">
+  <form action="<?= $requestUrl ?>/admin/login/" method="POST" onsubmit="return formValidate.buzz()">
+    <fieldset>
+      <legend>Identify yourself</legend>
+
+      <div class="form-flex">
+        <input id="Name" type="text" name="Name" value="" placeholder="Your name">
+        <input id="Mail" type="text" name="Mail" value="" placeholder="Your mail">
+        <input id="Password" name="Password" value="" placeholder="Password">
+
+      </div>
+
+      <div class="button">
+        <!--<button>Login</button>-->
+        <button id="blue" type="submit">Sign in</button>
+      </div>
+
+    </fieldset>
+  </form>
+</div>
+<script type="text/javascript" src="<?= $wwwUrl ?>/js/classes/FormValidate.class.js"></script>

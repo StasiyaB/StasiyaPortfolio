@@ -25,17 +25,17 @@
   <!-- ------------------------------ HEADER ----------------------------- -->
       <header class="flex-header">
         <div class="img-transform">
-          <a href="<?= $requestUrl ?>"><img src="<?= $wwwUrl ?>/images/logo-fox.png" alt="logo"></a>
+          <a href="<?= $requestUrl ?>/"><img src="<?= $wwwUrl ?>/images/logo-fox.png" alt="logo"></a>
         </div>
-        <a class="h-transform" href="<?= $requestUrl ?>">
+        <a class="h-transform" href="<?= $requestUrl ?>/">
           <h1>Anastasiya Baryash</h1>
           <h2>Web-Developer</h2>
         </a>
         <nav>
           <ol class="list-transform">
-            <li><a class="child1" href="#"><i class="fas fa-id-card child1"></i>Who I Am</a></li>
-            <li><a class="child2" href="#"><i class="fas fa-folder-open child2"></i>My Projects</a></li>
-            <li><a class="child3" href="#"><i class="fas fa-envelope child3"></i>Contact Me</a></li>
+            <li id="id" class=""><a href="<?= $requestUrl ?>/id/"><i class="fas fa-id-card"></i>Who I Am</a></li>
+            <li id="project" class=""><a href="<?= $requestUrl ?>/project/"><i class="fas fa-folder-open"></i>My Projects</a></li>
+            <li id="contact" class=""><a href="<?= $requestUrl ?>/contact/"><i class="fas fa-envelope"></i>Contact Me</a></li>
           </ol>
         </nav>
       </header>
@@ -54,7 +54,7 @@
             <a href="https://www.linkedin.com/in/stasiyab/"><i class="fab fa-linkedin"></i></a>
           </div>
           <div class="icon-transform">
-            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.instagram.com/chmfox/"><i class="fab fa-instagram"></i></a>
           </div>
           <div class="icon-transform">
             <a href="https://github.com/StasiyaB"><i class="fab fa-github-square"></i></a>
@@ -66,7 +66,8 @@
       </footer>
 
 <!-- Code principal JavaScript de l'application -->
-  <script src="<?= $wwwUrl ?>/js/main.js"></script>
+  <script type="text/javascript" src="<?= $wwwUrl ?>/js/classes/PageWalker.class.js"></script>
+  <script type="text/javascript" src="<?= $wwwUrl ?>/js/main.js"></script>
 
   </body>
 </html>

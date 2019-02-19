@@ -1,0 +1,55 @@
+<div class="container">
+    <h3>Some of my projects</h3>
+
+    <div class="flexslider">
+      <ul class="slides">
+        <li>
+          <img src="<?= $wwwUrl ?>/images/slider/01-ila-yoga.jpg" />
+        </li>
+        <li>
+          <img src="<?= $wwwUrl ?>/images/slider/02-creasoul.png" />
+        </li>
+        <li>
+          <img src="<?= $wwwUrl ?>/images/slider/03-wolf-gang.png" />
+        </li>
+        <li>
+          <img src="<?= $wwwUrl ?>/images/slider/05-cup-of-tea.jpg" />
+        </li>
+      </ul>
+    </div>
+
+    <h3>More details and description</h3>
+    <div class="flex-projects">
+  <!-- SECTION  -->
+        <?php foreach($projects as $project) : ?>
+          <section class="section-projects">
+  <!-- OVERLAY  -->
+            <div class="overlay">
+  <!-- DESCRIPTION  -->
+              <div class="description">
+                <p>
+                  <?=$project['ProjectDescription']?>
+                </p>
+                <h5 class="tools">
+                  <i class="fas fa-laptop-code"></i> <?=$project['TechnologyUsed']?>
+                </h5>
+                <a href="<?=$project['URL']?>">Click to visit <i class="fas fa-arrow-circle-right"></i></a>
+              </div>
+  <!-- END OF DESCRIPTION  -->
+              <img src="<?= $wwwUrl ?>/images/upload/<?=$project['Image']?>" alt="<?=$project['ProjectName']?>">
+              <h4 class="heading"><span><i class="fas fa-arrow-circle-up"></i></i></span><?=$project['ProjectName']?></h4>
+            </div>
+  <!-- END OF OVERLAY -->
+          </section>
+        <?php endforeach ?>
+  <!-- END OF SECTION -->
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script src="<?= $wwwUrl ?>/js/jquery.flexslider.js"></script>
+<script type="text/javascript" charset="utf-8">
+  $(window).load(function() {
+    $('.flexslider').flexslider();
+  });
+</script>
