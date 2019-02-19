@@ -39,11 +39,11 @@ class ContactModel {
                   WHERE Mail =?',
                   [ $post['Mail']]
               );
-      var_dump($email);
+      //var_dump($email);
 
         $to      = $post['Mail'];
         $subject = $post['Subject'];
-        $message = 'Hello, thank\'s for you message I will contact you shortly.';
+        $message = 'Hello, '.$post['Name'].' thank\'s for you message I will contact you shortly.';
         $headers = array(
         'From' => 'baryash.anastasiya@gmail.com',
         'Reply-To' => 'baryash.anastasiya@gmail.com',
@@ -51,6 +51,15 @@ class ContactModel {
 
         mail($to, $subject, $message, $headers);
 
+        $to      = 'baryash.anastasiya@gmail.com';
+        $subject = $post['Subject'];
+        $message = 'new message from : '.$post['Mail'];
+        $headers = array(
+        'From' => 'baryash.anastasiya@gmail.com',
+        'Reply-To' => 'baryash.anastasiya@gmail.com',
+        'X-Mailer' => 'PHP/' . phpversion() );
+
+        mail($to, $subject, $message, $headers);
   }
 
 }
