@@ -16,7 +16,6 @@ class ContactController
       $email = new ContactModel();
       $email->createMail($_POST);
 
-
       //var_dump($contact);
     }
 }

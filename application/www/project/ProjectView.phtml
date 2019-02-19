@@ -33,7 +33,9 @@
                 <h5 class="tools">
                   <i class="fas fa-laptop-code"></i> <?=$project['TechnologyUsed']?>
                 </h5>
-                <a href="<?=$project['URL']?>">Click to visit <i class="fas fa-arrow-circle-right"></i></a>
+                <?php if ($project['URL'] != ''): ?>
+                  <a href="<?=$project['URL']?>">Click to visit <i class="fas fa-arrow-circle-right"></i></a>
+                <?php endif; ?>
               </div>
   <!-- END OF DESCRIPTION  -->
               <img src="<?= $wwwUrl ?>/images/upload/<?=$project['Image']?>" alt="<?=$project['ProjectName']?>">
