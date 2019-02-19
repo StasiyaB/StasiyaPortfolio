@@ -24,12 +24,8 @@ ContactSession.prototype.removeColor = function () {
 ContactSession.prototype.clearForm = function(event) {
   event.preventDefault();
 
-  $('#FirstName').val('');
-  $('#LastName').val('');
+  $('#Name').val('');
+  $('#Subject').val('');
   $('#Mail').val('');
   $('#Message').val('');
 }
-
-/*ContactSession.prototype.Empty = fuction(event) {
-
-}*/

@@ -5,8 +5,11 @@ $navSize: 20px;
 $h1Size: 40px;
 $h2Size:35px;
 $h3Size:30px;
+$h4Size:20px;
+$h5Size:16px;
 $iconeSize:3em;
 $inputSize:16px;
+$small:14px;
 $white: #FFFCF3;
 $pink: #EDC1CC;
 $broun: #504746;
@@ -31,7 +34,7 @@ html {
   width: 80%;
   max-width: 1100px;
   margin: auto;
-  padding: 120px 40px;
+  padding: 40px 40px;
   //box-shadow: 0 0 25px rgba(0,0,0,0.2);
 	h3 {
 		font-weight: lighter;
@@ -39,6 +42,11 @@ html {
 		text-align: center;
 		padding-bottom: 2em;
 	}
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 body {
   font-family: $fontText;
@@ -66,6 +74,9 @@ body {
   h3 {
     font-size: $h3Size;
   }
+	h4 {
+		font-size: $h4Size;
+	}
 }
 /* ********************************************************************
 *************************** HEADER ***********************************
@@ -163,7 +174,16 @@ body {
 *************************** MAIN *************************************
 ******************************************************************** */
 main {
+	.h3Index {
+		padding-bottom: 0;
+	}
 
+	.note {
+		font-size: $small;
+		text-align: justify;
+		margin-top: 110px;
+		margin-bottom: 30px;
+	}
   .flex-list {
     display: flex;
     justify-content: space-between;
@@ -171,16 +191,120 @@ main {
 
     li {
       list-style: none;
-      svg {
-        display: block;
-      }
-    }
 
-    .tooltip-text {
-      text-align: center;
+			.tooltip {
+			  position: relative;
+			  width: 100px;
+			  height: 100px;
+			  display: block;
+				margin-top: 30px;
+
+				span#percent,
+				span#percent2,
+				span#percent3,
+				span#percent4,
+				span#percent5 {
+						display: block;
+					  position: absolute;
+					  left: 50%;
+					  top: 50%;
+					  font-size: $texteSize;
+					  transform: translate(-50%, -50%);
+					  color: $white;
+					}
+				span#percent::after,
+				span#percent2::after,
+				span#percent3::after,
+				span#percent4::after,
+				span#percent5::after {
+						content: '%';
+					}
+
+
+				.tooltip-text {
+					text-align: center;
+				  margin-top: 10px;
+					margin-bottom: 20px;
+					transform: scale(0);
+			    filter: blur(10px);
+		    }
+			}
     }
   }
 }
+/* ********************** ANIMATION ************************ */
+main {
+	.flex-list {
+		li {
+			.tooltip {
+				.animation{
+				    animation-name: zoomIn;
+				    animation-duration: 1.5s;
+				    animation-timing-function: ease-out;
+				    animation-delay: 2s;
+				    animation-direction: alternate;
+				    animation-iteration-count: 1;
+				    animation-fill-mode: forwards;
+				    animation-play-state: running;
+				}
+				.animation2 {
+				    animation-name: zoomIn;
+				    animation-duration: 1.5s;
+				    animation-timing-function: ease-out;
+				    animation-delay: 3s;
+				    animation-direction: alternate;
+				    animation-iteration-count: 1;
+				    animation-fill-mode: forwards;
+				    animation-play-state: running;
+				}
+				.animation3 {
+				    animation-name: zoomIn;
+				    animation-duration: 1.5s;
+				    animation-timing-function: ease-out;
+				    animation-delay: 4s;
+				    animation-direction: alternate;
+				    animation-iteration-count: 1;
+				    animation-fill-mode: forwards;
+				    animation-play-state: running;
+				}
+				.animation4 {
+				    animation-name: zoomIn;
+				    animation-duration: 1.5s;
+				    animation-timing-function: ease-out;
+				    animation-delay: 5s;
+				    animation-direction: alternate;
+				    animation-iteration-count: 1;
+				    animation-fill-mode: forwards;
+				    animation-play-state: running;
+				}
+				.animation5 {
+				    animation-name: zoomIn;
+				    animation-duration: 1.5s;
+				    animation-timing-function: ease-out;
+				    animation-delay: 6s;
+				    animation-direction: alternate;
+				    animation-iteration-count: 1;
+				    animation-fill-mode: forwards;
+				    animation-play-state: running;
+				}
+				@keyframes zoomIn {
+				  0% {
+				    transform: scale(.3);
+				    filter: blur(10px);
+				  }
+				  40% {
+				    transform: scale(1);
+				  }
+				  100% {
+				    filter: blur(0);
+				    transform: scale(1);
+				  }
+				}
+			}
+		}
+	}
+}
+
 /* ********************************************************************
 *************************** FOOTER *************************************
 ********************************************************************* */
@@ -242,6 +366,9 @@ footer {
   .container {
     padding-top: 40px;
     padding-bottom: 40px;
+		h3 {
+			padding-bottom: 0;
+		}
   }
 
   header {

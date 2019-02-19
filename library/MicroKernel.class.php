@@ -73,11 +73,16 @@ class MicroKernel
         {
             if($this->configuration->get('library', 'autoload-chain', false) == false)
             {
+              $http = new Http();
+              $http->redirectTo('/error');
+              /*
                 throw new ErrorException
                 (
                     "La classe <strong>$class</strong> ne se trouve pas ".
                     "dans le fichier<br><strong>$filename</strong>"
                 );
+
+                */
             }
         }
     }

@@ -1,0 +1,22 @@
+<div class="container">
+  <form action="<?= $requestUrl ?>/contact/" method="POST" onsubmit="return formValidate.buzz()">
+    <fieldset>
+      <legend>Contact me</legend>
+
+      <div class="form-flex">
+        <input id="Name" type="text" name="Name" value="" placeholder="Your name">
+        <input id="Mail" class="" type="text" name="Mail" value="" placeholder="Your mail *">
+        <input id="Subject" type="text" name="Subject" value="" placeholder="Subject">
+        <textarea id="Message" name="Message" placeholder="Your message" rows="3"></textarea>
+      </div>
+
+      <div class="button">
+        <button id="send" type="submit">Send</button>
+        <button id="deleteForm">Delete</button>
+      </div>
+
+    </fieldset>
+  </form>
+</div>
+<script type="text/javascript" src="<?= $wwwUrl ?>/js/classes/ContactSession.class.js"></script>
+<script type="text/javascript" src="<?= $wwwUrl ?>/js/classes/FormValidate.class.js"></script>

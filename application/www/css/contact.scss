@@ -1,7 +1,7 @@
 @import "index.scss";
 
 .flex-header {
-  nav ol li:nth-child(3) {
+  .host {
     a {
       color: $blue;
       .fas {
@@ -34,25 +34,39 @@ form {
 
     input,
     textarea {
+      //text-transform: capitalize;
       margin: 20px;
       padding: 20px;
       color: white;
       background-color: $pink;
       border: none;
     }
+    ::placeholder {
+      color:$white;
+    }
 
-    #FirstName {
+    #Name {
+      width: 45%;
+      text-transform: capitalize;
+    }
+    #Mail,
+    #PasswordLog,
+    #Image,
+    #Techno,
+    #URL {
       width: 45%;
     }
-    #LastName {
-      width: 45%;
+    #Subject {
+      width: 100%;
+      text-transform: capitalize;
     }
-    #mail {
+
+    #Message,
+    #Password,
+    #Description{
       width: 100%;
     }
-    #message {
-      width: 100%;
-    }
+
 
   }
 
@@ -65,26 +79,61 @@ form {
       border: 0;
       padding: 14px 20px;
     }
-    button:nth-child(1) {
+    button:nth-child(1),
+    #send {
       background-color: $pink;
       font-size:$texteSize;
       color: $white;
     }
-    button:nth-child(2) {
+    button:nth-child(2),
+    #deleteForm,
+    #blue {
       background-color: $blue;
       font-size:$texteSize;
       color: $white;
     }
   }
 }
+/* ********************** ANIMATION *************** */
+.buzz {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97);
+  transform: translate3d(0, 0, 0);
+  background-color: $blue;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
 /* ********************* PAD ********************** */
 @media screen and (max-width: 1366px) and (min-width: 480px) {
   form {
     .form-flex {
-      #FirstName {
+      #Name {
         width: 100%;
       }
-      #LastName {
+      #Mail {
+        width: 100%;
+      }
+
+      #PasswordLog,
+      #PasswordLog,
+      #Image,
+      #Techno,
+      #URL {
         width: 100%;
       }
     }
@@ -104,10 +153,18 @@ form {
 
   form {
     .form-flex {
-      #FirstName {
+      #Name {
         width: 100%;
       }
-      #LastName {
+      #Mail {
+        width: 100%;
+      }
+
+      #PasswordLog,
+      #PasswordLog,
+      #Image,
+      #Techno,
+      #URL {
         width: 100%;
       }
     }
