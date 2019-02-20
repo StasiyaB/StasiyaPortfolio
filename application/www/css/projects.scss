@@ -67,7 +67,7 @@
       height: 220px;
 
     }
-    
+
     .description {
     	position: absolute;
     	top: 0px;
@@ -98,6 +98,7 @@
   .section-projects:hover .overlay img {
     opacity: 0;
   	transition: opacity .32s;
+    display: none;
   }
   .section-projects:hover .overlay span {
     opacity: 0;
@@ -143,6 +144,8 @@
 /* ********************* PAD ********************** */
 @media screen and (max-width: 960px) and (min-width: 480px) {
   .flex-projects {
+    flex-wrap: wrap;
+    align-items: center;
     .section-projects {
 
       width: 530px;
@@ -168,9 +171,9 @@
 /* ******************** PHONE ******************** */
 @media screen and (max-width: 480px) {
   .flex-projects {
+    flex-wrap: wrap;
+    align-items: center;
     .section-projects {
-
-      width: 280px;
 
       img {
         display: none;

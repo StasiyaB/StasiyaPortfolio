@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost
--- Généré le :  lun. 18 fév. 2019 à 12:15
+-- Généré le :  mer. 20 fév. 2019 à 19:40
 -- Version du serveur :  5.7.24-0ubuntu0.16.04.1
 -- Version de PHP :  7.2.11-2+ubuntu16.04.1+deb.sury.org+1
 
@@ -46,7 +46,11 @@ INSERT INTO `Contacts` (`Id`, `Name`, `Mail`, `Message`, `CreationTimestamp`, `S
 (40, 'Anastasiya', 'baryash.anastasiya@gmail.com', 'test', '2019-02-12 11:27:17', 'Test'),
 (41, 'Anastasiya', 'baryash.anastasiya@gmail.com', 'test', '2019-02-12 11:35:34', 'Test'),
 (57, 'Anastasiya', 'black@gogo.com', 'gfgfg', '2019-02-13 10:19:57', 'gfgf'),
-(58, 'Anastasiya', 'black@gogo.com', 'gfgfg', '2019-02-13 11:01:06', 'gfgf');
+(58, 'Anastasiya', 'black@gogo.com', 'gfgfg', '2019-02-13 11:01:06', 'gfgf'),
+(59, 'Anastasiya', 'baryash.anastasiya@gmail.com', 'test test', '2019-02-19 10:24:54', 'Test'),
+(60, 'Anastasiya', 'baryash.anastasiya@gmail.com', 'mail test', '2019-02-19 10:52:50', 'Test'),
+(61, 'Anastasiya', 'baryash.anastasiya@gmail.com', 'mail test', '2019-02-19 10:55:11', 'Test'),
+(62, 'Mihail', 'rabotaresp@gmail.com', 'Hello! How are you?', '2019-02-19 13:53:50', 'letter from the site');
 
 -- --------------------------------------------------------
 
@@ -78,7 +82,7 @@ INSERT INTO `Projects` (`Id`, `ProjectName`, `Image`, `ProjectDescription`, `Tec
 (29, 'Blog', '08.png', 'Blog site with admin and user access. Administrator has the possibility add, delete authors, posts and comments. Edit the role of Authors. User can read posts  and add comments.', 'HTML, CSS, PHP, MySQL; $_SESSION, $_GET, $_POST', ''),
 (30, 'Movie searching engine', '10.png', 'Practice of API usage and treatment', 'HTML, CSS, JS, DOM, JQuery, API', ''),
 (31, 'Carousel', '11.png', 'Possibility to launch slider to switch the images in the loop, as well as forward, revers and pause the movement with the help of the mouse or from the keyboard.', 'HTML, CSS, JS, DOM', ''),
-(33, 'Restaurant', '09.png', 'Site of the online restaurant. The user should be signed up and loged in the site to have the possibility to order food and book the place in the restaurant. There\'s possibility to choose and add food, remove it from the bascket and proceed with the payment of the order.', 'HTML, CSS, JS, PHP, MySQL, JQuery; MicroKernel, Objects, Functions, Loops, DOM, $_SESSION, $_POST, $_GET, Local Storage', '');
+(33, 'Restaurant', '09.png', 'Site of the online restaurant. There\'s possibility to choose and add food, remove it from the bascket and proceed with the payment of the order.', 'HTML, CSS, JS, PHP, MySQL, JQuery; MicroKernel, Objects, Functions, Loops, DOM, $_SESSION, $_POST, $_GET, Local Storage', '');
 
 -- --------------------------------------------------------
 
@@ -131,20 +135,17 @@ ALTER TABLE `Users`
 -- AUTO_INCREMENT pour la table `Contacts`
 --
 ALTER TABLE `Contacts`
-  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=59;
-
+  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=63;
 --
 -- AUTO_INCREMENT pour la table `Projects`
 --
 ALTER TABLE `Projects`
   MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
-
 --
 -- AUTO_INCREMENT pour la table `Users`
 --
 ALTER TABLE `Users`
-  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
-COMMIT;
+  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
