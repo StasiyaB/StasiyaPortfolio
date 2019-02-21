@@ -53,7 +53,8 @@ class ContactModel {
 
         $to      = 'baryash.anastasiya@gmail.com';
         $subject = $post['Subject'];
-        $message = 'new message from : '.$post['Mail'];
+        $message = 'New message from : '.$post['Mail'];
+        $message = 'Content : '.$post['Message'];
         $headers = array(
         'From' => 'baryash.anastasiya@gmail.com',
         'Reply-To' => 'baryash.anastasiya@gmail.com',

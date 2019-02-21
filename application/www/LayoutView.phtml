@@ -13,13 +13,23 @@
     <link rel="stylesheet" href="<?= $wwwUrl ?>/css/style.css">
     <link rel="stylesheet" href="<?= $wwwUrl ?>/css/flexslider.css">
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134922996-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-134922996-1');
+    </script>
+
     <!-- Librairie jQuery -->
     <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
 
     <!-- JavaScript de l'application -->
     <script src="<?= $wwwUrl ?>/js/utilities.js"></script>
 
-    <title>Anastasiya Baryash</title>
+    <title>Anastasiya Baryash Portfolio</title>
   </head>
   <body>
   <!-- ------------------------------ HEADER ----------------------------- -->
@@ -68,16 +78,6 @@
 <!-- Code principal JavaScript de l'application -->
   <script type="text/javascript" src="<?= $wwwUrl ?>/js/classes/PageWalker.class.js"></script>
   <script type="text/javascript" src="<?= $wwwUrl ?>/js/main.js"></script>
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134922996-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-134922996-1');
-  </script>
 
   </body>
 </html>
