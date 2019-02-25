@@ -220,7 +220,8 @@ main .flex-list li .tooltip .animation5 {
 ********************************************************************* */
 footer {
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
-  padding: 20px; }
+  padding: 20px;
+  /* ************************* ANIMATION ****************************** */ }
   footer p:nth-child(1) {
     font-style: italic;
     color: #EDC1CC;
@@ -233,15 +234,15 @@ footer {
   footer .flex-footer {
     display: flex;
     justify-content: center;
-    padding-top: 20px;
+    padding-top: 2em;
     padding-bottom: 1.5em; }
   footer .icon-transform .fab:hover {
     animation: bounce 1s infinite alternate; }
 @keyframes bounce {
-  0% {
-    transform: translateY(-20px); }
   100% {
-    transform: translate(0); } }
+    transform: translateY(-20px); }
+  0% {
+    transform: translateY(0); } }
 /* ********************* PAD ********************** */
 @media screen and (max-width: 1366px) and (min-width: 480px) {
   .flex-header {
@@ -520,7 +521,8 @@ main .flex-list li .tooltip .animation5 {
 ********************************************************************* */
 footer {
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
-  padding: 20px; }
+  padding: 20px;
+  /* ************************* ANIMATION ****************************** */ }
   footer p:nth-child(1) {
     font-style: italic;
     color: #EDC1CC;
@@ -533,15 +535,15 @@ footer {
   footer .flex-footer {
     display: flex;
     justify-content: center;
-    padding-top: 20px;
+    padding-top: 2em;
     padding-bottom: 1.5em; }
   footer .icon-transform .fab:hover {
     animation: bounce 1s infinite alternate; }
 @keyframes bounce {
-  0% {
-    transform: translateY(-20px); }
   100% {
-    transform: translate(0); } }
+    transform: translateY(-20px); }
+  0% {
+    transform: translateY(0); } }
 /* ********************* PAD ********************** */
 @media screen and (max-width: 1366px) and (min-width: 480px) {
   .flex-header {
@@ -864,7 +866,8 @@ main .flex-list li .tooltip .animation5 {
 ********************************************************************* */
 footer {
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
-  padding: 20px; }
+  padding: 20px;
+  /* ************************* ANIMATION ****************************** */ }
   footer p:nth-child(1) {
     font-style: italic;
     color: #EDC1CC;
@@ -877,15 +880,15 @@ footer {
   footer .flex-footer {
     display: flex;
     justify-content: center;
-    padding-top: 20px;
+    padding-top: 2em;
     padding-bottom: 1.5em; }
   footer .icon-transform .fab:hover {
     animation: bounce 1s infinite alternate; }
 @keyframes bounce {
-  0% {
-    transform: translateY(-20px); }
   100% {
-    transform: translate(0); } }
+    transform: translateY(-20px); }
+  0% {
+    transform: translateY(0); } }
 /* ********************* PAD ********************** */
 @media screen and (max-width: 1366px) and (min-width: 480px) {
   .flex-header {
@@ -1286,7 +1289,8 @@ main .flex-list li .tooltip .animation5 {
 ********************************************************************* */
 footer {
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
-  padding: 20px; }
+  padding: 20px;
+  /* ************************* ANIMATION ****************************** */ }
   footer p:nth-child(1) {
     font-style: italic;
     color: #EDC1CC;
@@ -1299,15 +1303,15 @@ footer {
   footer .flex-footer {
     display: flex;
     justify-content: center;
-    padding-top: 20px;
+    padding-top: 2em;
     padding-bottom: 1.5em; }
   footer .icon-transform .fab:hover {
     animation: bounce 1s infinite alternate; }
 @keyframes bounce {
-  0% {
-    transform: translateY(-20px); }
   100% {
-    transform: translate(0); } }
+    transform: translateY(-20px); }
+  0% {
+    transform: translateY(0); } }
 /* ********************* PAD ********************** */
 @media screen and (max-width: 1366px) and (min-width: 480px) {
   .flex-header {
@@ -1695,7 +1699,8 @@ main .flex-list li .tooltip .animation5 {
 ********************************************************************* */
 footer {
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
-  padding: 20px; }
+  padding: 20px;
+  /* ************************* ANIMATION ****************************** */ }
   footer p:nth-child(1) {
     font-style: italic;
     color: #EDC1CC;
@@ -1708,15 +1713,15 @@ footer {
   footer .flex-footer {
     display: flex;
     justify-content: center;
-    padding-top: 20px;
+    padding-top: 2em;
     padding-bottom: 1.5em; }
   footer .icon-transform .fab:hover {
     animation: bounce 1s infinite alternate; }
 @keyframes bounce {
-  0% {
-    transform: translateY(-20px); }
   100% {
-    transform: translate(0); } }
+    transform: translateY(-20px); }
+  0% {
+    transform: translateY(0); } }
 /* ********************* PAD ********************** */
 @media screen and (max-width: 1366px) and (min-width: 480px) {
   .flex-header {
@@ -2034,7 +2039,8 @@ main .flex-list li .tooltip .animation5 {
 ********************************************************************* */
 footer {
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
-  padding: 20px; }
+  padding: 20px;
+  /* ************************* ANIMATION ****************************** */ }
   footer p:nth-child(1) {
     font-style: italic;
     color: #EDC1CC;
@@ -2047,15 +2053,15 @@ footer {
   footer .flex-footer {
     display: flex;
     justify-content: center;
-    padding-top: 20px;
+    padding-top: 2em;
     padding-bottom: 1.5em; }
   footer .icon-transform .fab:hover {
     animation: bounce 1s infinite alternate; }
 @keyframes bounce {
-  0% {
-    transform: translateY(-20px); }
   100% {
-    transform: translate(0); } }
+    transform: translateY(-20px); }
+  0% {
+    transform: translateY(0); } }
 /* ********************* PAD ********************** */
 @media screen and (max-width: 1366px) and (min-width: 480px) {
   .flex-header {

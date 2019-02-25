@@ -328,19 +328,19 @@ footer {
   .flex-footer {
     display: flex;
     justify-content: center;
-    padding-top: 20px;
+    padding-top: 2em;
     padding-bottom: 1.5em;
   }
-
+/* ************************* ANIMATION ****************************** */
   .icon-transform .fab:hover {
     animation: bounce 1s infinite alternate;
   }
   @keyframes bounce {
-    0% {
+    100% {
       transform: translateY(-20px);
     }
-    100% {
-      transform: translate(0);
+    0% {
+      transform: translateY(0);
     }
   }
 }
