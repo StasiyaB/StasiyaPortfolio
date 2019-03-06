@@ -70,7 +70,7 @@ class ContactModel {
         $message = 'New message from : '.$post['Mail']. ' , ' .$post['Name'].'. ';
         $message .= 'Content of the message : '.$post['Message'];
         $headers = array(
-        'From' => 'baryash.anastasiya@gmail.com',
+        'From' => $post['Mail'],
         'Reply-To' => 'baryash.anastasiya@gmail.com',
         'X-Mailer' => 'PHP/' . phpversion() );
 
