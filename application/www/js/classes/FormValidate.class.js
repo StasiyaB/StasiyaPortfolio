@@ -1,20 +1,20 @@
 'use strict';
 
 var FormValidate = function() {
-  console.log('valid');
+  //console.log('valid');
 }
 
 FormValidate.prototype.buzz = function() {
 
-  console.log('declenchement');
+  //console.log('declenchement');
   if ($('#Mail').val() == "") {
-    console.log('declenchement false');
+  //console.log('declenchement false');
 
       $('#Mail').addClass('buzz');
       return false;
 
   } else {
-    console.log('declenchement true');
+  //console.log('declenchement true');
 
     return true;
   }

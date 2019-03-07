@@ -11,7 +11,7 @@ class AdminController
     {
       $user = new AdminModel();
       $user->connectUser($_POST);
-      var_dump($user);
-      var_dump($_SESSION);  
+      //var_dump($user);
+      //var_dump($_SESSION);  
     }
 }

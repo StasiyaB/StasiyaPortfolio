@@ -1,5 +1,13 @@
 <div class="container">
+
+  <?php if ($error == true ) {?>
+  <div class="popup">
+      <p> <?= $emailErr ?></p>
+  </div>
+  <?php } ?>
+
   <form action="<?= $requestUrl ?>/contact/" method="POST" onsubmit="return formValidate.buzz()">
+
     <fieldset>
       <legend>Contact me</legend>
 

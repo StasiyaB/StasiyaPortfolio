@@ -27,8 +27,9 @@ class ContactModel {
 
     $http = new Http();
     //$http->redirectTo('/');
+    
   }
-
+/*
   public function createMail($post) {
 
     $dataContact = new Database ();
@@ -37,7 +38,7 @@ class ContactModel {
                   SELECT *
                   FROM Users
                   WHERE Mail =?',
-                  [ $post['Mail']]
+                  [$post['Mail']]
               );
       //var_dump($email);
 
@@ -75,6 +76,5 @@ class ContactModel {
         'X-Mailer' => 'PHP/' . phpversion() );
 
         mail($to, $subject, $message, $headers);
-  }
-
+  }*/
 }
