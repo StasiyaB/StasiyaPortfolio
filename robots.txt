@@ -1,0 +1,22 @@
+User-agent: *
+Disallow: /modules/
+Disallow: /temp/
+Disallow: /languages/
+Disallow: /includes/
+Disallow: /cfg/
+Disallow: /cgi-bin/
+Disallow: /my/
+Disallow: /*?*
+Disallow: /*js*
+Disallow: /online/*
+Disallow: /registraciya*
+Disallow: /*images*
+Disallow: /projects*
+
+
+Sitemap: http://www.portfolio-baryash-anastasiya.com/sitemap.xml
+
+User-Agent: Yandex
+
+Host: www.portfolio-baryash-anastasiya.com/
+Sitemap: http://www.portfolio-baryash-anastasiya.com/sitemap.xml

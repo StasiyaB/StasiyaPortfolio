@@ -26,7 +26,6 @@ class ContactModel {
                ]);
 
     $http = new Http();
-    //$http->redirectTo('/');
 
   }
 

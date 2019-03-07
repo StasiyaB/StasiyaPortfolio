@@ -18,5 +18,7 @@ class ContactController
       $email->createMail($_POST);
 
       //var_dump($contact);
+      $http->redirectTo('/contact/');
+      unset($_POST);
     }
 }
