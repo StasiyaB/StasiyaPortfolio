@@ -6,7 +6,7 @@ var PageWalker = function() {
 }
 
 PageWalker.prototype.removeColor = function () {
-  console.log('remove');
+  //console.log('remove');
 
 //add class with the blue color when the page is on
 

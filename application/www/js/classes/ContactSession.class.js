@@ -2,13 +2,14 @@
 
 var ContactSession = function() {
 
-  console.log('move');
+  //console.log('move');
   this.removeColor();
   $('#deleteForm').on('click', this.clearForm.bind(this));
+
 }
 
 ContactSession.prototype.removeColor = function () {
-  console.log('remove');
+  //console.log('remove');
 
 //remove blue color from the li
   if (window.location.href.indexOf('/id') != -1) {

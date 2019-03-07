@@ -1434,18 +1434,21 @@ form .button {
 /* ********************** ANIMATION *************** */
 .buzz {
   animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97);
-  transform: translate3d(0, 0, 0);
-  background-color: #A2B7BF; }
+  transform: translate3d(0, 0, 0); }
 
 @keyframes shake {
   10%, 90% {
-    transform: translate3d(-1px, 0, 0); }
+    transform: translate3d(-1px, 0, 0);
+    background-color: #A2B7BF; }
   20%, 80% {
-    transform: translate3d(2px, 0, 0); }
+    transform: translate3d(2px, 0, 0);
+    background-color: #A2B7BF; }
   30%, 50%, 70% {
-    transform: translate3d(-4px, 0, 0); }
+    transform: translate3d(-4px, 0, 0);
+    background-color: #A2B7BF; }
   40%, 60% {
-    transform: translate3d(4px, 0, 0); } }
+    transform: translate3d(4px, 0, 0);
+    background-color: #A2B7BF; } }
 /* ********************* PAD ********************** */
 @media screen and (max-width: 1366px) and (min-width: 480px) {
   form .form-flex #Name {

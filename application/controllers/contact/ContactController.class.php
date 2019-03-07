@@ -9,25 +9,14 @@ class ContactController
 
     public function httpPostMethod(Http $http, array $formFields)
     {
-      $error = false;
-      $emailErr = '';
       //var_dump($_POST);
 
-      if(filter_var($_POST['Mail'], FILTER_VALIDATE_EMAIL) === false) {
+      $contact = new ContactModel();
+      $contact->addContact($_POST);
 
-      $error = true;
-      $emailErr = "Invalid email.";
-      echo $emailErr;
+      $email = new ContactModel();
+      $email->createMail($_POST);
 
-      } else {
-
-        $contact = new ContactModel();
-        $contact->addContact($_POST);
-
-        var_dump($contact);
-
-        /*$email = new ContactModel();
-        $email->createMail($_POST);*/
-      }
+      //var_dump($contact);
     }
 }
