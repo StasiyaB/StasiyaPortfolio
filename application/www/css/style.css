@@ -2167,5 +2167,342 @@ footer {
     color: #EDC1CC;
     left: 0px;
     top: 0px; } }
+/* *********************************************************************
+*************************** BODY *************************************
+******************************************************************** */
+* {
+  box-sizing: border-box;
+  outline: none; }
+
+html {
+  font-size: 62.5%; }
+
+.container {
+  width: 80%;
+  max-width: 1100px;
+  margin: auto;
+  padding: 40px 40px; }
+  .container h3 {
+    font-weight: lighter;
+    color: #A2B7BF;
+    text-align: center;
+    padding-bottom: 2em; }
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+body {
+  font-family: "Cuprum", sans-serif;
+  color: #FFFCF3;
+  font-size: 18px;
+  background-color: #504746; }
+  body h1 {
+    font-family: "Lobster", cursive;
+    font-weight: lighter;
+    color: #EDC1CC; }
+  body h1 {
+    font-size: 40px;
+    font-weight: lighter;
+    text-align: center; }
+  body h2 {
+    font-size: 35px;
+    font-weight: lighter;
+    text-align: center; }
+  body h3 {
+    font-size: 30px; }
+  body h4 {
+    font-size: 20px; }
+
+/* ********************************************************************
+*************************** HEADER ***********************************
+********************************************************************* */
+.flex-header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 40px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+  /*.img-transform img {
+    transition: all 2s;
+  }
+  .img-transform:hover img {
+
+    transform: scale(1.5);
+  }
+*/ }
+  .flex-header .h-transform {
+    transition: all 2s;
+    text-decoration: none; }
+    .flex-header .h-transform h2 {
+      color: #A2B7BF; }
+  .flex-header .h-transform:hover {
+    transform: scale(1.5); }
+  .flex-header .h-transform h2:hover {
+    color: #A2B7BF; }
+  .flex-header div {
+    width: 30%; }
+    .flex-header div img {
+      width: 45%;
+      margin-left: 90px; }
+  .flex-header nav {
+    width: 30%;
+    font-size: 20px; }
+    .flex-header nav ol {
+      list-style: none;
+      text-align: center;
+      padding-left: 0;
+      margin: 0;
+      display: flex; }
+    .flex-header nav ol li {
+      padding: 16px;
+      width: 40%; }
+    .flex-header nav a {
+      text-decoration: none;
+      color: #FFFCF3;
+      padding-right: 4%;
+      display: inline-block; }
+    .flex-header nav a .fas {
+      display: block;
+      line-height: 3em;
+      color: #EDC1CC; }
+    .flex-header nav a .fas:hover {
+      color: #A2B7BF; }
+    .flex-header nav:hover a {
+      opacity: 0.3; }
+    .flex-header nav a:hover {
+      opacity: 1; }
+    .flex-header nav .list-transform li a {
+      transition: all 1s; }
+    .flex-header nav .list-transform li a:hover {
+      color: #A2B7BF;
+      transform: translateY(20px); }
+
+/* *******************************************************************
+*************************** MAIN *************************************
+******************************************************************** */
+main .h3Index {
+  padding-bottom: 0; }
+main .note {
+  font-size: 14px;
+  text-align: justify;
+  margin-top: 110px;
+  margin-bottom: 30px; }
+main .flex-list {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0; }
+  main .flex-list li {
+    list-style: none; }
+    main .flex-list li .tooltip {
+      position: relative;
+      width: 100px;
+      height: 100px;
+      display: block;
+      margin-top: 30px; }
+      main .flex-list li .tooltip span#percent,
+      main .flex-list li .tooltip span#percent2,
+      main .flex-list li .tooltip span#percent3,
+      main .flex-list li .tooltip span#percent4,
+      main .flex-list li .tooltip span#percent5 {
+        display: block;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        font-size: 18px;
+        transform: translate(-50%, -50%);
+        color: #FFFCF3; }
+      main .flex-list li .tooltip span#percent::after,
+      main .flex-list li .tooltip span#percent2::after,
+      main .flex-list li .tooltip span#percent3::after,
+      main .flex-list li .tooltip span#percent4::after,
+      main .flex-list li .tooltip span#percent5::after {
+        content: '%'; }
+      main .flex-list li .tooltip .tooltip-text {
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        transform: scale(0);
+        filter: blur(10px); }
+
+/* ********************** ANIMATION ************************ */
+main .flex-list li .tooltip .animation {
+  animation-name: zoomIn;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 2s;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running; }
+main .flex-list li .tooltip .animation2 {
+  animation-name: zoomIn;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 3s;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running; }
+main .flex-list li .tooltip .animation3 {
+  animation-name: zoomIn;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 4s;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running; }
+main .flex-list li .tooltip .animation4 {
+  animation-name: zoomIn;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 5s;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running; }
+main .flex-list li .tooltip .animation5 {
+  animation-name: zoomIn;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 6s;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running; }
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.3);
+    filter: blur(10px); }
+  40% {
+    transform: scale(1); }
+  100% {
+    filter: blur(0);
+    transform: scale(1); } }
+/* ********************************************************************
+*************************** FOOTER *************************************
+********************************************************************* */
+footer {
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  /* ************************* ANIMATION ****************************** */ }
+  footer p:nth-child(1) {
+    font-style: italic;
+    color: #EDC1CC;
+    text-align: center; }
+  footer a {
+    padding: 2em; }
+  footer .fab {
+    font-size: 3em;
+    color: #A2B7BF; }
+  footer .flex-footer {
+    display: flex;
+    justify-content: center;
+    padding-top: 2em;
+    padding-bottom: 1.5em; }
+  footer .icon-transform .fab:hover {
+    animation: bounce 1s infinite alternate; }
+@keyframes bounce {
+  100% {
+    transform: translateY(-20px); }
+  0% {
+    transform: translateY(0); } }
+/* ********************* PAD ********************** */
+@media screen and (max-width: 1366px) and (min-width: 480px) {
+  .flex-header {
+    flex-wrap: wrap; }
+    .flex-header div {
+      width: 50%; }
+      .flex-header div h2 {
+        color: #A2B7BF; }
+    .flex-header nav {
+      width: 100%; } }
+/* ******************** PHONE ******************** */
+@media screen and (max-width: 480px) {
+  .container {
+    padding-top: 40px;
+    padding-bottom: 40px; }
+    .container h3 {
+      padding-bottom: 0; }
+
+  header {
+    margin: 20px;
+    border-radius: 8px; }
+
+  .flex-header {
+    flex-direction: column; }
+    .flex-header div {
+      width: 100%; }
+      .flex-header div a img {
+        margin-left: 26%;
+        margin-right: 26%; }
+      .flex-header div h2 {
+        color: #A2B7BF; }
+    .flex-header nav {
+      width: 100%; }
+      .flex-header nav ol {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%; }
+
+  .flex-list {
+    flex-direction: column;
+    align-items: center; }
+    .flex-list li {
+      margin-bottom: 20px; }
+
+  footer {
+    margin: 20px;
+    border-radius: 8px; }
+    footer p {
+      text-align: center; }
+    footer .flex-footer {
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 0; }
+      footer .flex-footer div {
+        margin-bottom: 1.5em; } }
+div .button {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  div .button a .fas {
+    color: pink;
+    font-size: 30px; }
+  div .button a[data-tooltip] {
+    position: relative;
+    color: #FFFCF3; }
+  div .button a[data-tooltip]::before {
+    content: attr(data-tooltip);
+    position: absolute;
+    display: none;
+    bottom: 2em;
+    width: 100px;
+    left: 50%;
+    margin-left: -50px;
+    background-color: #A2B7BF;
+    border: 1px solid #A2B7BF;
+    text-align: center;
+    padding: 5px; }
+  div .button a[data-tooltip]::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-top-color: #A2B7BF;
+    left: 30%;
+    margin-left: -10px;
+    display: none; }
+  div .button a[data-tooltip]:hover::before,
+  div .button a[data-tooltip]:hover::after {
+    display: block; }
 
 /*# sourceMappingURL=style.css.map */

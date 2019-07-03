@@ -1,0 +1,46 @@
+@import "index.scss";
+
+div .button {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  a .fas {
+
+    color: pink;
+    font-size: $h3Size;
+  }
+  a[data-tooltip] {
+      position: relative;
+      color: $white;
+  }
+  a[data-tooltip]::before {
+      content: attr(data-tooltip);
+      position: absolute;
+      display: none;
+      bottom: 2em;
+      width: 100px;
+      left: 50%;
+      margin-left: -50px;
+      background-color: $blue;
+      border: 1px solid $blue;
+      text-align: center;
+      padding: 5px;
+  }
+  a[data-tooltip]::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      width: 0;
+      height: 0;
+      border: 20px solid transparent;
+      border-top-color: $blue;
+      left: 30%;
+      margin-left: -10px;
+      display: none;
+  }
+  a[data-tooltip]:hover::before,
+  a[data-tooltip]:hover::after{
+      display: block;
+  }
+}
