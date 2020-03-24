@@ -25,40 +25,9 @@
   <nav class="flex-nav">
     <a class="login" href="<?= $requestUrl ?>/admin/login/">Add User</a>
     <a class="logout" href="<?= $requestUrl ?>/admin/logout/">Logout</a>
+    <a class="login" href="<?= $requestUrl ?>/admin/list/">Projects</a>
   </nav>
 
-  <table>
-    <caption><span>Projects list</span></caption>
 
-    <thead>
-      <th>Image</th>
-      <th>Project name</th>
-      <th>Project description</th>
-      <th>Technology used</th>
-      <th>URL</th>
-    </thead>
-
-    <tbody>
-      <?php foreach ($projects as $project) { ?>
-        <tr>
-          <td>
-            <img src="<?= $wwwUrl ?>/images/upload/<?=$project['Image']?>" alt="<?=$project['ProjectName']?>">
-          </td>
-          <td>
-            <?=$project['ProjectName']?>
-          </td>
-          <td>
-            <?=$project['ProjectDescription']?>
-          </td>
-          <td>
-            <?=$project['TechnologyUsed']?>
-          </td>
-          <td>
-            <?=$project['URL']?>
-          </td>
-        </tr>
-      <?php } ?>
-    </tbody>
-  </table>
 </div>
 <script type="text/javascript" src="<?= $wwwUrl ?>/js/classes/ProjectSession.class.js"></script>

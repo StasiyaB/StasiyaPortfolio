@@ -2,7 +2,7 @@
 
 var ProjectSession = function() {
 
-  console.log('pro');
+  //console.log('pro');
   $('#deleteForm').on('click', this.clearAll.bind(this));
 }
 

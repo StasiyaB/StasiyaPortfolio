@@ -310,7 +310,8 @@ h2 span {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding-top: 64px; }
+  padding-top: 64px;
+  padding-bottom: 64px; }
   .flex-nav .login,
   .flex-nav .logout {
     text-decoration: none;
@@ -326,7 +327,7 @@ h2 span {
     background-color: #A2B7BF; }
 
 table {
-  margin-top: 3em;
+  border: 2px solid #EDC1CC;
   box-shadow: 0 0 17px black; }
   table caption {
     font-size: 30px;
@@ -340,11 +341,15 @@ table {
       padding: 0 10px; }
   table thead th {
     padding: 20px;
-    background-color: #EDC1CC;
-    width: 20%; }
+    background-color: #EDC1CC; }
   table tbody tr td {
     padding: 20px;
     background-color: #A2B7BF; }
+    table tbody tr td a {
+      color: #EDC1CC;
+      font-size: 30px; }
+    table tbody tr td a:hover {
+      color: #FFFCF3; }
 
 /* ********************* PAD ********************** */
 @media screen and (max-width: 1366px) and (min-width: 480px) {

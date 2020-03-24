@@ -38,7 +38,7 @@ class AdminModel {
               [ $post['Mail']]
             );
 
-    var_dump($user);
+    //var_dump($user);
 
     if( $user != false && $this->verifyPassword($post['Password'], $user['Password']) == true ) {
 

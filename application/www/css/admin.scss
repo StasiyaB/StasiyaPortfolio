@@ -16,6 +16,7 @@ h2 {
   justify-content: space-around;
   align-items: center;
   padding-top: 64px;
+  padding-bottom: 64px;
 
   .login,
   .logout {
@@ -36,7 +37,7 @@ h2 {
 }
 
 table {
-  margin-top: $iconeSize;
+  border: 2px solid $pink;
   box-shadow: 0 0 17px black;
 
   caption {
@@ -55,12 +56,20 @@ table {
   thead th {
     padding: 20px;
     background-color: $pink;
-    width: 20%;
+
   }
   tbody {
     tr td {
       padding: 20px;
-      background-color: $blue;
+      background-color: $blue;      
+
+      a {
+        color: $pink;
+        font-size: $h3Size;
+      }
+      a:hover {
+        color:$white;
+      }
     }
   }
 }

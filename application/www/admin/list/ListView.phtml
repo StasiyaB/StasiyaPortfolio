@@ -1,0 +1,40 @@
+<div class="container">
+  <h2><i class="fas fa-user-cog"></i> Administration log by : <span><?= $_SESSION['Name'] ?></span></h2>
+    <table>
+      <caption><span>Projects list</span></caption>
+
+      <thead>
+        <th>Image</th>
+        <th>Project name</th>
+        <th>Project description</th>
+        <th>Technology used</th>
+        <th>URL</th>
+        <th>Edit Project</th>
+      </thead>
+
+      <tbody>
+        <?php foreach ($projects as $project) { ?>
+          <tr>
+            <td>
+              <img src="<?= $wwwUrl ?>/images/upload/<?=$project['Image']?>" alt="<?=$project['ProjectName']?>">
+            </td>
+            <td>
+              <?=$project['ProjectName']?>
+            </td>
+            <td>
+              <?=$project['ProjectDescription']?>
+            </td>
+            <td>
+              <?=$project['TechnologyUsed']?>
+            </td>
+            <td>
+              <?=$project['URL']?>
+            </td>
+            <td>
+              <a class="edit" href="<?= $requestUrl ?>/admin/edit?Id=<?=$project['Id']?>"><i class="fas fa-edit"></i></a>
+            </td>
+          </tr>
+        <?php } ?>
+      </tbody>
+    </table>
+</div>

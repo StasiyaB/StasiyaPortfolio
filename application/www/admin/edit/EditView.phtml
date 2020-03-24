@@ -1,0 +1,26 @@
+<div class="container">
+  <h2><i class="fas fa-user-cog"></i> Administration log by : <span><?= $_SESSION['Name'] ?></span></h2>
+
+ <form action="<?= $requestUrl ?>/admin/edit" enctype="multipart/form-data" method="POST">
+
+    <fieldset>
+      <legend>Edit project</legend>
+
+      <div class="form-flex">
+        
+        <input id="Name" type="text" name="ProjectName" value="<?=$oneProject['ProjectName']?>" placeholder="Project Name">
+        <input id="Image" type="file" name="Image" value="<?=$oneProject['Image']?>" size="30" placeholder="Progect Image">
+        <input id="Techno" type="text" name="TechnologyUsed" value="<?=$oneProject['TechnologyUsed']?>" placeholder="Technology Used">
+        <input id="URL" type="text" name="URL" value="<?=$oneProject['URL']?>" placeholder="URL of the Project">
+        <textarea id="Description" name="ProjectDescription" placeholder="Project Description" rows="3"><?=$oneProject['ProjectDescription']?></textarea>
+      </div>
+
+      <div class="button">
+        <button id="send" type="submit">Update</button>
+        <button id="deleteForm">Delete</button>
+      </div>
+
+    </fieldset>
+  </form>
+
+</div>
